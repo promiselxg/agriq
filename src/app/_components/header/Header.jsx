@@ -107,13 +107,13 @@ const Header = () => {
                     <a href="">About Us</a>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">What We Do</a>
+                    <a href="">Our Services</a>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <a href="">Team</a>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">Community Engagement</a>
+                    <a href="">Projects</a>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <a

@@ -1,33 +1,18 @@
-import Image from "next/image";
-
 const Hero = () => {
   return (
     <>
-      <div className="h-[600px] w-full relative hero overflow-hidden">
-        <div className="hero-bg">
-          <div className="w-[1200px] mx-auto flex items-center h-[calc(100vh-30vh)]">
+      <div className="w-full relative">
+        <div className="hero-bg h-screen">
+          <div className="absolute top-0 bottom-0 bg-[rgba(0,0,0,0.3)] w-full h-full"></div>
+          <div className="w-[1200px] mx-auto flex items-center h-screen">
             <div className="container flex  justify-between items-center  gap-6">
-              <div className="w-1/2 max-w-lg flex flex-initial flex-col ml-[20px]">
-                <h1 className="text-2xl font-extrabold text-[#212529]">
-                  AgriBusiness Unleashed: Planting Success in the Digital Soil!
+              <div className="w-3/4 max-w-max flex flex-initial flex-col ml-[20px] bg-[rgba(0,0,0,0.5)] p-10">
+                <h1 className="text-5xl font-extrabold text-[#fff] z-10 leading-tight mb-4">
+                  How agricultural innovation &amp; sustainability impact
+                  harvest.
                 </h1>
-                <p className="my-5 text-[15.4px] text-[#777777] text-start leading-6">
-                  Unleash the power of AgriBusiness with us, where success is
-                  planted in the digital soil, growing into a thriving harvest
-                  of innovation.
-                </p>
-                <ul className="mt-2">
-                  <li>
-                    <a
-                      href=""
-                      className="w-fit btn-dark custom-btn p-3 relative bg-[#212529]"
-                    >
-                      <span className="relative z-10">Learn More</span>
-                    </a>
-                  </li>
-                </ul>
               </div>
-              <div className="w-1/2 flex items-center justify-end">
+              {/* <div className="w-1/2 flex items-center justify-end">
                 <div className="w-full">
                   <div className="w-full gap-5 relative flex flex-wrap justify-center">
                     <div className="w-fit services_box bg-[#fff] rounded-[50%] p-3 overflow-hidden rotate cursor-pointer">
@@ -86,7 +71,7 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

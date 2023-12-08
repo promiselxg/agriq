@@ -9,9 +9,11 @@ const SectionBlog = () => {
           <div className="flex justify-center text-center items-center py-20 flex-col">
             <div className="flex flex-col mb-10">
               <h1 className="text-[#777] text-[16px] uppercase font-semibold">
-                what is happening
+                News &amp; Articles
               </h1>
-              <h1 className="text-4xl font-extrabold">Latest News</h1>
+              <h1 className="text-4xl font-extrabold">
+                What&apos;s worth knowing
+              </h1>
             </div>
             <div className="w-full grid grid-cols-3 gap-5">
               <div className="bg-[#fff] justify-end text-start services_box">
