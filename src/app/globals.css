@@ -34,6 +34,7 @@ body {
   font-family: poppins, Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
+  background-color: #e8e8e8;
 }
 .header__top::before {
   content: "";
@@ -150,7 +151,7 @@ body {
   transition: all 0.3s ease-in;
   width: 100px;
 } */
-.stats {
+.company_stats {
   background-image: url("https://tplabs.co/agrios/wp-content/uploads/2022/07/wheats-2.webp");
   /* background-image: url("/live/particles1.svg"); */
   background-size: cover;
@@ -250,4 +251,51 @@ body {
 /* The Transformation */
 .img-hover-zoom:hover img {
   transform: scale(1);
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="radio"] {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  width: 200px !important;
+  transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 768px) {
+  input[type="radio"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100px !important;
+  }
+}
+.items {
+  cursor: pointer;
+}
+.tabs {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  transition: all 0.3s ease-in;
+}
+.our_value_proposition ul li {
+  list-style-type: circle;
+}
+
+.tabs-lifted > .tab.tab-active:not(.tab-disabled):not([disabled]),
+.tabs-lifted > .tab:is(input:checked) {
+  color: white !important;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+.tabs-lifted > .tab.tab-active:not(.tab-disabled):not([disabled]):before,
+.tabs-lifted > .tab:is(input:checked):before {
+  content: none !important;
+}
+.tab-content ul li {
+  list-style-type: circle;
+}
+.tab-content {
+  transition: all 0.3s ease-in;
 }

@@ -99,29 +99,29 @@ const Header = () => {
               <nav className="flex items-center">
                 <ul className="flex gap-8">
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="" className="h-full">
+                    <Link href="/" className="h-full">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">About Us</a>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">Our Services</a>
+                    <Link href="/services">Our Services</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">Team</a>
+                    <Link href="/team">Team</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a href="">Projects</a>
+                    <Link href="/projects">Projects</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <a
-                      href=""
+                    <Link
+                      href="/contact"
                       className="btn-dark custom-btn p-3 relative bg-[#212529]"
                     >
                       <span className="relative z-10">Contact Us</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 import WhyUs from "./why-us";
+import Link from "next/link";
 
 const SectionServices = () => {
   return (
     <>
-      <div className="service_bg relative h-[100px]"></div>
       <div className="services relative  bg-[#fff] ">
         <div className="w-[90%] mx-auto h-fit">
           <div className="p-20">
@@ -100,12 +99,12 @@ const SectionServices = () => {
             </div>
             <ul className="flex justify-center text-center items-center mt-20">
               <li>
-                <a
-                  href=""
+                <Link
+                  href="/services"
                   className="w-fit btn-dark custom-btn p-3 relative bg-[#f04c23] "
                 >
                   <span className="relative z-10">All Services</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 const CompanyStats = () => {
   return (
     <>
-      <div className="w-full relative h-fit bg-[black] text-white stats">
+      <div className="w-full relative h-fit bg-[black] text-white company_stats">
         <div className="w-full mx-auto p-20">
           <div className="flex justify-center text-center items-center flex-col">
             <h1 className="text-[20px] opacity-70 font-semibold">

@@ -1,18 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
-import Partners from "../partners/partners";
 
 const SectionAboutUs = () => {
   return (
     <>
       <div className=" w-full flex relative bg-[#e8e8e8]">
         <div className="w-[1200px]  mx-auto py-24  flex justify-between gap-7  items-center">
-          <div className="right flex w-2/3 flex-col">
+          <div className="right flex w-full flex-col">
             <div className="heading">
               <h1 className="text-2xl font-bold text-[#f04c23] uppercase">
                 Welcome
               </h1>
-              <p className="my-5 text-[#777] text-[16px]">
+              <p className="my-5 text-[#000] text-[16px] font-medium">
                 AgriQ is at the forefront of the agricultural consulting
                 industry. We offer advanced consulting services tailored to meet
                 the needs of farmers, agribusinesses, and agricultural
@@ -26,12 +24,30 @@ const SectionAboutUs = () => {
                 enhanced cassava yield per hectare by more than 350% through
                 smart agribusiness solutions.
               </p>
+              <p className="my-5 text-[16px] text-[#000] font-medium">
+                Our engagement with various public and private agencies, as well
+                as international initiatives, has positioned AgriQ at an
+                esteemed value above others. We understand the challenges faced
+                by farmers and businesses, and we are here to provide
+                comprehensive solutions that drive growth and prosperity. Our
+                team of experienced researchers, and consultants work tirelessly
+                to offer personalized advice, advanced technologies, and
+                strategic planning that empower you to achieve your agricultural
+                goals.
+              </p>
+              <p className="my-5 text-[16px] text-[#000] font-medium">
+                As you navigate through our website, you will discover a
+                treasure trove of experience, insights, and services designed to
+                enhance agricultural productivity, optimize resources, and
+                foster sustainable practices. At AgriQ, we pride ourselves on
+                providing a holistic agricultural consulting experience.
+              </p>
             </div>
 
             <ul className="my-5">
               <li>
                 <Link
-                  href=""
+                  href="/about"
                   className="w-fit btn-dark custom-btn p-3 relative bg-[#f04c23]"
                 >
                   <span className="relative z-10">Learn More</span>
@@ -39,7 +55,7 @@ const SectionAboutUs = () => {
               </li>
             </ul>
           </div>
-          <div className="left flex w-1/2 gap-3"></div>
+          {/* <div className="left flex w-1/2 gap-3"></div> */}
         </div>
       </div>
       {/* <Partners /> */}
