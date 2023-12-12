@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="mt-10 ml-0">
               <li className="font-semibold text-[13px]  transition-all">
                 <a
-                  href=""
+                  href="mailto:"
                   className="btn-dark custom-btn p-3 relative bg-[#f37353]"
                 >
                   <span className="relative z-10">

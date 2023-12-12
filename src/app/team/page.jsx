@@ -89,12 +89,12 @@ export default function Home() {
   return (
     <>
       <main className="relative bg-[white]">
-        <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[400px] items-center justify-center bg-cover bg-center">
+        <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[200px] md:h-[400px] items-center justify-center bg-cover bg-center">
           <div className="flex flex-col justify-center text-center items-center w-1/2">
             <h1 className="text-white text-4xl font-extrabold py-3">
               Our Team
             </h1>
-            <p className="text-[whitesmoke] text-[16px] font-medium">
+            <p className="text-[whitesmoke] text-[16px] font-medium hidden">
               We have a team of professionals with extensive experience and
               expertise in agriculture, agribusiness, and management consulting.
               Our team members have a proven track record, skills, and credible
@@ -104,9 +104,9 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full ">
-          <div className="w-full mx-auto bg-[white] md:p-10 p-10">
+          <div className="w-full mx-auto bg-[white] md:p-10 p-5">
             <h1 className="py-3 text-2xl font-extrabold mb-2">Sort By:</h1>
-            <ul className="flex items-center gap-4">
+            <ul className="flex md:items-center gap-4 flex-col md:flex-row items-start">
               <li className="font-semibold text-[16px] transition-all">
                 <button
                   className={`btn-dark custom-btn p-3 relative ${
@@ -140,11 +140,11 @@ export default function Home() {
                 </button>
               </li>
             </ul>
-            <div className="py-10">
-              <div className="w-full grid grid-cols-4 gap-5 my-10">
+            <div className="md:py-10">
+              <div className="w-full grid md:grid-cols-4 gap-5 my-10">
                 {sortedteamMembers.map((team, index) => (
                   <div
-                    className="bg-[#000] relative team_member cursor-pointer h-[300px] bg-center bg-contain w-full overflow-hidden project_team"
+                    className="bg-[#000] relative team_member cursor-pointer h-[350px] bg-center bg-cover w-full overflow-hidden project_team"
                     key={index}
                   >
                     <div className="absolute top-0 bottom-0 w-full bg-[rgba(0,0,0,0.8)] h-0 overflow-hidden hidden_bg ">
@@ -162,6 +162,7 @@ export default function Home() {
                       width={330}
                       height={350}
                       alt={team?.name}
+                      className="w-full bg-cover h-[350px]"
                     />
                   </div>
                 ))}
