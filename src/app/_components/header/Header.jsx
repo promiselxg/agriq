@@ -128,6 +128,35 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
+              <div className="drawer drawer-end  md:hidden relative w-fit">
+                <input
+                  id="my-drawer-4"
+                  type="checkbox"
+                  className="drawer-toggle"
+                />
+                <div className="w-fit">
+                  {/* Page content here */}
+                  <label htmlFor="my-drawer-4" className="btn">
+                    X
+                  </label>
+                </div>
+                <div className="drawer-side h-screen z-50">
+                  <label
+                    htmlFor="my-drawer-4"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                    {/* Sidebar content here */}
+                    <li>
+                      <a>Sidebar Item 1</a>
+                    </li>
+                    <li>
+                      <a>Sidebar Item 2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
