@@ -3,14 +3,14 @@ import Link from "next/link";
 const SectionAboutUs = () => {
   return (
     <>
-      <div className=" w-full flex relative bg-[#e8e8e8]">
-        <div className="w-[1200px]  mx-auto py-24  flex justify-between gap-7  items-center">
-          <div className="right flex w-full flex-col">
+      <div className="w-full flex relative bg-[#e8e8e8]">
+        <div className="md:w-[1200px]  mx-auto md:py-24 py-10 flex justify-between gap-7  items-center">
+          <div className="flex w-[90%] md:w-full flex-col mx-auto md:mx-0">
             <div className="heading">
               <h1 className="text-2xl font-bold text-[#f04c23] uppercase">
                 Welcome
               </h1>
-              <p className="my-5 text-[#000] text-[16px] font-medium">
+              <p className="my-5 text-[#000] md:text-[16px] font-medium">
                 AgriQ is at the forefront of the agricultural consulting
                 industry. We offer advanced consulting services tailored to meet
                 the needs of farmers, agribusinesses, and agricultural
@@ -24,7 +24,7 @@ const SectionAboutUs = () => {
                 enhanced cassava yield per hectare by more than 350% through
                 smart agribusiness solutions.
               </p>
-              <p className="my-5 text-[16px] text-[#000] font-medium">
+              <p className="my-5 md:text-[16px] text-[#000] font-medium">
                 Our engagement with various public and private agencies, as well
                 as international initiatives, has positioned AgriQ at an
                 esteemed value above others. We understand the challenges faced
@@ -35,7 +35,7 @@ const SectionAboutUs = () => {
                 strategic planning that empower you to achieve your agricultural
                 goals.
               </p>
-              <p className="my-5 text-[16px] text-[#000] font-medium">
+              <p className="my-5 md:text-[16px] text-[#000] font-medium">
                 As you navigate through our website, you will discover a
                 treasure trove of experience, insights, and services designed to
                 enhance agricultural productivity, optimize resources, and

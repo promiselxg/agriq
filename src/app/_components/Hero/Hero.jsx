@@ -1,13 +1,13 @@
 const Hero = () => {
   return (
     <>
-      <div className="w-full relative">
-        <div className="hero-bg h-screen">
-          <div className="absolute top-0 bottom-0 bg-[rgba(0,0,0,0.3)] w-full h-full"></div>
-          <div className="w-[1200px] mx-auto flex items-center h-screen">
-            <div className="container flex  justify-between items-center  gap-6">
-              <div className="w-3/4 max-w-max flex flex-initial flex-col ml-[20px] bg-[rgba(0,0,0,0.5)] p-10">
-                <h1 className="text-5xl font-extrabold text-[#fff] z-10 leading-tight mb-4">
+      <div className="w-full relative ">
+        <div className="hero-bg md:h-screen h-[200px] ">
+          <div className="absolute top-0 bottom-0 bg-[rgba(0,0,0,0.3)] w-full md:h-full"></div>
+          <div className="md:w-[1200px] mx-auto flex items-center md:h-screen h-[200px]">
+            <div className="md:container flex  justify-between items-center gap-6">
+              <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[20px] bg-[rgba(0,0,0,0.5)] p-10 ">
+                <h1 className="text-sm md:text-5xl font-extrabold text-[#fff] z-10 leading-tight mb-4">
                   How agricultural innovation &amp; sustainability impact
                   harvest.
                 </h1>

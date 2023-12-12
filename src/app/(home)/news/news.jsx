@@ -4,9 +4,9 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const SectionBlog = () => {
   return (
     <>
-      <div className="w-full relative h-screen bg-white">
-        <div className="mx-auto w-[1200px]">
-          <div className="flex justify-center text-center items-center py-20 flex-col">
+      <div className="w-full relative md:h-screen bg-white">
+        <div className="mx-auto w-[90%] md:w-[1200px]">
+          <div className="flex justify-center text-center items-center md:py-20 py-10 flex-col">
             <div className="flex flex-col mb-10">
               <h1 className="text-[#777] text-[16px] uppercase font-semibold">
                 News &amp; Articles
@@ -15,7 +15,7 @@ const SectionBlog = () => {
                 What&apos;s worth knowing
               </h1>
             </div>
-            <div className="w-full grid grid-cols-3 gap-5">
+            <div className="md:w-full grid md:grid-cols-3 gap-5">
               <div className="bg-[#fff] justify-end text-start services_box">
                 <div className="bg-[url('https://web.archive.org/web/20220319145228im_/https://www.agriqservices.com/wp-content/uploads/2017/11/Sesame-seed.jpg')] w-full h-[200px] object-contain relative cursor-pointer blog_img">
                   <div className="w-full absolute top-0 left-0 h-[0]  inner-bg "></div>

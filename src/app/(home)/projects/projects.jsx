@@ -4,13 +4,13 @@ const Projects = () => {
   return (
     <>
       <div className="w-full flex h-fit bg-[#F9F9F9] pb-20 border border-t-0">
-        <div className="mx-auto w-full px-10">
-          <div className="pt-20 pb-10">
+        <div className="mx-auto w-[95%] md:w-full md:px-10">
+          <div className="pt-10 md:pt-20 md:pb-10 pb-5">
             <div className="flex justify-center align-center text-center flex-col mb-10">
               <h1 className="text-3xl font-extrabold my-4">Recent Projects</h1>
             </div>
           </div>
-          <div className="w-full grid grid-cols-4 gap-2 ">
+          <div className="w-full grid md:grid-cols-4 gap-2 ">
             <div className="bg-[url('https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_270/https://tplabs.co/agrios/wp-content/uploads/2022/07/service-01.webp')]  bg-cover h-[500px] relative project rounded-[10px] overflow-hidden">
               <div className="top-0 bottom-0 w-full absolute cursor-pointer black_bg"></div>
               <div className="absolute bottom-8 w-full">

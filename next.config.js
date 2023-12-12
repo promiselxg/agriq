@@ -7,6 +7,7 @@ const nextConfig = {
       "www.syngenta.com",
       "techsometimes.com",
       "sp-ao.shortpixel.ai",
+      "sahelconsult.com",
     ],
   },
 };

@@ -142,6 +142,16 @@ body {
   height: 100%;
   transition: all 0.3s ease-in;
 }
+.service:hover .desc {
+  top: 0px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in;
+  background-color: #fff;
+}
+.service:hover .wrapper {
+  height: 200px;
+  transition: all 0.3s ease-in;
+}
 /* .link > div {
   width: 0px;
   overflow: hidden;
@@ -297,5 +307,12 @@ input[type="radio"] {
   list-style-type: circle;
 }
 .tab-content {
+  transition: all 0.3s ease-in;
+}
+.hidden_bg {
+  transition: all 0.3s ease-in;
+}
+.team_member:hover .hidden_bg {
+  height: 100%;
   transition: all 0.3s ease-in;
 }

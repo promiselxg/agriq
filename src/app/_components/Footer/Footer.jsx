@@ -11,13 +11,13 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex footer-bg p-20">
-        <div className="w-[1200px] mx-auto">
-          <div className="flex justify-between items-center py-10 border border-b-[#777] border-t-0 border-l-0 border-r-0">
-            <h1 className="text-[rgba(255,255,255,0.8)] text-4xl font-extrabold">
+      <div className="w-full flex footer-bg md:p-20 p-5">
+        <div className="w-full md:w-[1200px] mx-auto">
+          <div className="flex md:justify-between md:items-center py-10 border border-b-[#777] border-t-0 border-l-0 border-r-0 flex-col md:flex-row">
+            <h1 className="text-[rgba(255,255,255,0.8)] text-2xl  md:text-4xl font-extrabold ">
               Want to start an Agribusiness?
             </h1>
-            <ul>
+            <ul className="mt-10 ml-0">
               <li className="font-semibold text-[13px]  transition-all">
                 <a
                   href=""
@@ -30,8 +30,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full grid grid-cols-3 gap-5 mt-8">
-            <div className="p-10 flex justify-start flex-col">
+          <div className="w-full grid md:grid-cols-3 gap-5 md:mt-8">
+            <div className="p-5 md:p-10 flex justify-start flex-col">
               <Image
                 src="/logo.png"
                 width={100}
@@ -51,7 +51,7 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <div className="p-10 flex justify-start flex-col">
+            <div className="p-5 md:p-10 flex justify-start flex-col">
               <h1 className="mt-1 text-[16px] font-bold text-[rgba(255,255,255,0.8)]">
                 Navigation
               </h1>
@@ -80,7 +80,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="p-10 flex justify-start flex-col">
+            <div className="p-5 md:p-10 flex justify-start flex-col">
               <h1 className="mt-1 text-[16px] font-bold text-[rgba(255,255,255,0.8)]">
                 Connect with us
               </h1>

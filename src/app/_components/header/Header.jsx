@@ -11,10 +11,10 @@ import {
 const Header = () => {
   return (
     <>
-      <header className="w-full h-[150px] flex items-center bg-[whitesmoke] relative">
+      <header className="w-full h-[80px] md:h-[150px] flex items-center bg-[whitesmoke] relative">
         <div className="w-[1200px] mx-auto">
-          <div className="flex items-center justify-between h-[60px] relative -top-3">
-            <nav className="flex">
+          <div className="flex items-center justify-between md:h-[60px] relative -top-3">
+            <nav className="hidden md:flex">
               <ul className="flex relative header__top pr-3">
                 <li className="flex z-10 p-4 gap-3 font-semibold">
                   <span className="flex gap-1">
@@ -40,7 +40,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <div className="flex gap-5 items-center">
+            <div className="hidden md:flex gap-5 items-center">
               <ul className="mx-auto">
                 <li className="m-2 font-semibold text-sm">
                   Mon - Sat 9:00am - 5:00pm / Sunday - CLOSED
@@ -96,7 +96,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <nav className="flex items-center">
+              <nav className="hidden md:flex items-center">
                 <ul className="flex gap-8">
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <Link href="/" className="h-full">
@@ -114,6 +114,9 @@ const Header = () => {
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <Link href="/projects">Projects</Link>
+                  </li>
+                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                    <Link href="/projects">News &amp; Articles</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <Link

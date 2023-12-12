@@ -6,15 +6,15 @@ const SectionServices = () => {
   return (
     <>
       <div className="services relative  bg-[#fff] ">
-        <div className="w-[90%] mx-auto h-fit">
-          <div className="p-20">
+        <div className="w-full md:w-[90%] mx-auto h-fit">
+          <div className="w-[90%] mx-auto  py-10 md:p-20">
             <div className="flex justify-center align-center text-center flex-col mb-10">
               <h1 className="font-[600] text-[#f04c23] text-[16px] uppercase">
                 What we do
               </h1>
               <h1 className="text-3xl font-extrabold my-4">Our Services</h1>
             </div>
-            <div className="w-full grid grid-cols-3 gap-5 gap-y-10">
+            <div className="w-full grid md:grid-cols-3 gap-5 gap-y-10">
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
                   src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Young_scientist_collecting_samples_from_the_cherry_tomato_plant_in_the_greenhouse.jpg"

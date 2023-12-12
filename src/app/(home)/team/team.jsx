@@ -4,14 +4,14 @@ import { FiTwitter, FiLinkedin } from "react-icons/fi";
 const Team = () => {
   return (
     <>
-      <div className="w-full flex h-screen pb-20 bg-[#fff]">
+      <div className="w-full flex h-fit md:h-screen pb-20 bg-[#fff]">
         <div className="mx-auto w-full px-10">
           <div className="pt-20">
             <div className="flex justify-center align-center text-center flex-col mb-10">
               <h1 className="text-3xl font-extrabold my-4">Our People</h1>
             </div>
           </div>
-          <div className="w-full grid grid-cols-4 gap-5">
+          <div className="w-full grid md:grid-cols-4 gap-5">
             <div className="">
               <div className="img-hover-zoom img-hover-zoom--xyz">
                 <Image
