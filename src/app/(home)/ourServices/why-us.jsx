@@ -7,16 +7,16 @@ const WhyUs = () => {
       <div className="w-full flex h-fit pb-20">
         <div className="mx-auto w-[90%] md:w-[1200px]">
           <div className="pt-20 pb-10">
-            <div className="flex gap-5 ">
-              <div className="left w-1/2 relative h-[600px]">
-                <div className="w-[10%] bg-[#4CAF48] h-[480px] absolute top-[50px] -left-5 rounded-l-[20px]"></div>
+            <div className="flex gap-5 flex-col md:flex-row">
+              <div className="left w-[90%] mx-auto md:mx-0 md:w-1/2 relative h-[300px] md:h-[600px]">
+                <div className="w-[10%] bg-[#4CAF48] h-[250px] md:h-[480px] absolute top-[30px] md:top-[50px] -left-5 rounded-l-[20px]"></div>
                 <div className="absolute top-0 left-0 rounded-[20px] overflow-hidden">
                   <Image
                     src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_570/https://tplabs.co/agrios/wp-content/uploads/2022/07/farmer.webp"
                     width={500}
                     height={600}
                     alt=""
-                    className="z-10 w-full h-[600px]"
+                    className="z-10 w-full h-[300px] md:h-[600px]"
                   />
                 </div>
               </div>
