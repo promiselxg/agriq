@@ -9,19 +9,19 @@ export const metadata = {
 const Services = () => {
   return (
     <>
-      <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[300px] items-center justify-center bg-cover bg-center">
+      <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] md:h-[300px] items-center justify-center bg-cover bg-center">
         <div className="flex flex-col justify-center text-center items-center w-1/2">
-          <h1 className="text-white text-4xl font-extrabold py-3">
+          <h1 className="text-white text-2xl md:text-4xl font-extrabold py-10 md:py-3">
             Our Services
           </h1>
-          <p className="text-[whitesmoke] text-[16px] font-medium">
+          <p className="text-[whitesmoke] md:text-[16px] font-medium text-ellipsis hidden">
             At AgriQ, we understand that running an agribusiness can be a high
             risk venture that is why we partner with you to ensure that your
             desired outcomes are achieved.
           </p>
         </div>
       </div>
-      <div className="w-[1200px] grid grid-cols-3 gap-5 gap-y-10 mx-auto my-20">
+      <div className="w-[90%] md:w-[1200px] grid md:grid-cols-3 gap-5 gap-y-10 mx-auto my-20">
         <div className="w-full flex flex-col services_box service cursor-pointer h-[400px]">
           <Image
             src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Young_scientist_collecting_samples_from_the_cherry_tomato_plant_in_the_greenhouse.jpg"

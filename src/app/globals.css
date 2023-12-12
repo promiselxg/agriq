@@ -278,7 +278,11 @@ input[type="radio"] {
     flex-direction: column !important;
     align-items: center !important;
     gap: 10px !important;
-    width: 100px !important;
+    width: 300px !important;
+  }
+  .tabs-lifted > .tab.tab-active:not(.tab-disabled):not([disabled]),
+  .tabs-lifted > .tab:is(input:checked) {
+    margin: 10px 0;
   }
 }
 .items {

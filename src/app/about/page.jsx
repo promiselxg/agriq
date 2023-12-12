@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             <div className="py-10">
               <div className="tab_header">
-                <div role="tablist" className="tabs tabs-lifted">
+                <div role="tablist" className="md:tabs tabs-lifted">
                   <input
                     type="radio"
                     name="my_tabs_2"
@@ -52,18 +52,18 @@ export default function Home() {
                     role="tabpanel"
                     className="tab-content bg-[white] w-full md:w-[1000px] p-6"
                   >
-                    <p className="text-[16px]  leading-normal py-2">
+                    <p className="md:text-[16px]  leading-normal py-2">
                       AgriQ is an agribusiness consulting organisation that
                       supports clients across the food and agribusiness value
                       chain-providing valuable operational and commercial
                       solutions.
                     </p>
-                    <p className="text-[16px]  leading-normal py-2">
+                    <p className="md:text-[16px]  leading-normal py-2">
                       With venerable experience and proven competence, we plan,
                       execute and manage highly-efficient agribusiness
                       interventions.
                     </p>
-                    <p className="text-[16px]  leading-normal py-2">
+                    <p className="md:text-[16px]  leading-normal py-2">
                       Our team of technical and commercial experts have
                       successfully delivered on over 20 agribusiness programs
                       across the diversified agribusiness sector and value
@@ -104,7 +104,7 @@ export default function Home() {
                           <div className="text-lg font-extrabold">
                             AgriQ Business Services LTD
                           </div>
-                          <p className="text-[16px]  py-2">
+                          <p className="md:text-[16px]  py-2">
                             AgriQ Business Services LTD was established on 21st
                             of October, 2015 with the primary objective of
                             providing advisory and consulting services in
@@ -130,7 +130,7 @@ export default function Home() {
                   />
                   <div role="tabpanel" className="tab-content p-6">
                     <h1 className="py-2 text-[20px] font-bold">Our Vision</h1>
-                    <p className="text-[16px]  py-2">
+                    <p className="md:text-[16px]  py-2">
                       Our vision is to globally recognised institution,
                       committed to maximizing the potentials agricultural and
                       agro based of enterprises in Africa-through the provision
@@ -138,7 +138,7 @@ export default function Home() {
                       solutions
                     </p>
                     <h1 className="py-2 text-[20px] font-bold">Our Mission</h1>
-                    <p className="text-[16px]  py-2">
+                    <p className="md:text-[16px]  py-2">
                       Our mission is to equip each client with requisite
                       knowledge and skills they need for success.
                     </p>
@@ -157,19 +157,19 @@ export default function Home() {
                       Our value proposition
                     </h1>
                     <ul>
-                      <li className="text-[16px] py-3">
+                      <li className="md:text-[16px] py-3">
                         We bring to each clients over 40 years of both
                         functional expertise and sector-focused experienced in
                         the Agriculture and Agro-services sector- with
                         internationally-recognized accomplishments.
                       </li>
-                      <li className="text-[16px] py-3">
+                      <li className="md:text-[16px] py-3">
                         We provide a diverse team composed of world-class
                         professionals in Agricultural Production, Development
                         and Economics, Engineering, Business Management,
                         Financial Services and Investment Banking.
                       </li>
-                      <li className="text-[16px] py-3">
+                      <li className="md:text-[16px] py-3">
                         As successful operators of agribusinesses ourselves, we
                         offer the most practical advice and technical support to
                         our clients – we call it providing &apos;true
