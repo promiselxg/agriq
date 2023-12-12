@@ -50,7 +50,7 @@ export default function Home() {
                   />
                   <div
                     role="tabpanel"
-                    className="tab-content bg-[white] w-full md:w-[1000px] p-6"
+                    className="tab-content bg-[white] w-full md:w-[1000px] py-6 md:py-6"
                   >
                     <p className="md:text-[16px]  leading-normal py-2">
                       AgriQ is an agribusiness consulting organisation that
