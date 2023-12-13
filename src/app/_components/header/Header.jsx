@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import {
   FiFacebook,
   FiTwitter,
@@ -9,9 +11,30 @@ import {
 } from "react-icons/fi";
 
 const Header = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.scrollY;
+      const triggerHeight = 200; // Set your desired scroll height here
+
+      setIsFixed(scrollHeight > triggerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="w-full h-[80px] md:h-[150px] flex items-center bg-[whitesmoke] relative">
+      <header
+        className={` w-full h-[80px] md:h-[150px] flex items-center bg-[whitesmoke] relative ${
+          isFixed ? "sticky top-0 bg-[#fff] z-50" : ""
+        }`}
+      >
         <div className="w-[1200px] mx-auto">
           <div className="flex items-center justify-between md:h-[60px] relative -top-3">
             <nav className="hidden md:flex">
