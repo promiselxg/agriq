@@ -86,7 +86,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .hero-bg {
-  background-image: url("https://www.syngenta.com/sites/syngenta/files/Syngenta-Rowe-AnthonyCollins.nyc-3379.jpg");
+  /* background-image: url("https://www.syngenta.com/sites/syngenta/files/Syngenta-Rowe-AnthonyCollins.nyc-3379.jpg"); */
   position: relative;
   background-size: cover;
   background-position-y: 60%;
