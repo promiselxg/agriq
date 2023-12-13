@@ -26,7 +26,7 @@ const ValueChain = () => {
             <div className="collapse collapse-plus">
               <input type="radio" id="accordionRadio-1" name="my-accordion-3" />
               <div
-                className="collapse-title text-sm font-medium border border-b-[rgba(0,0,0,0.1)]"
+                className="collapse-title text-sm font-bold border border-b-[rgba(0,0,0,0.1)]"
                 onClick={() => handleCollapseToggle(1)}
               >
                 Cassava
@@ -67,7 +67,7 @@ const ValueChain = () => {
             <div className="collapse collapse-plus">
               <input type="radio" id="accordionRadio-2" name="my-accordion-3" />
               <div
-                className="collapse-title text-sm font-medium border border-b-[rgba(0,0,0,0.1)]"
+                className="collapse-title text-sm font-bold border border-b-[rgba(0,0,0,0.1)]"
                 onClick={() => handleCollapseToggle(2)}
               >
                 Maize
@@ -112,7 +112,7 @@ const ValueChain = () => {
             <div className="collapse collapse-plus">
               <input type="radio" id="accordionRadio-3" name="my-accordion-3" />
               <div
-                className="collapse-title text-sm font-medium border border-b-[rgba(0,0,0,0.1)]"
+                className="collapse-title text-sm font-bold border border-b-[rgba(0,0,0,0.1)]"
                 onClick={() => handleCollapseToggle(3)}
               >
                 Broiler
@@ -159,7 +159,7 @@ const ValueChain = () => {
             <div className="collapse collapse-plus">
               <input type="radio" id="accordionRadio-4" name="my-accordion-3" />
               <div
-                className="collapse-title text-sm font-medium border border-b-[rgba(0,0,0,0.1)]"
+                className="collapse-title text-sm font-bold border border-b-[rgba(0,0,0,0.1)]"
                 onClick={() => handleCollapseToggle(4)}
               >
                 Aquaculture
@@ -196,7 +196,7 @@ const ValueChain = () => {
             <div className="collapse collapse-plus">
               <input type="radio" id="accordionRadio-5" name="my-accordion-3" />
               <div
-                className="collapse-title text-sm font-medium border border-b-[rgba(0,0,0,0.1)]"
+                className="collapse-title text-sm font-bold border border-b-[rgba(0,0,0,0.1)]"
                 onClick={() => handleCollapseToggle(5)}
               >
                 Oil-Palm

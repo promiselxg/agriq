@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   FiFacebook,
@@ -28,6 +29,18 @@ const Header = () => {
     };
   }, []);
 
+  const router = useRouter();
+
+  const closeDrawer = () => {
+    const checkbox = document.getElementById("my-drawer-4");
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+  };
+  const navigateAndCloseDrawer = (path) => () => {
+    router.push(path);
+    closeDrawer();
+  };
   return (
     <>
       <header
@@ -151,7 +164,7 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <div className="drawer drawer-end  md:hidden relative w-fit">
+              <div className="drawer drawer-end md:hidden relative w-fit">
                 <input
                   id="my-drawer-4"
                   type="checkbox"
@@ -163,19 +176,44 @@ const Header = () => {
                     X
                   </label>
                 </div>
-                <div className="drawer-side h-screen z-50">
+                <div className="drawer-side h-screen z-50 top-[80px]">
                   <label
                     htmlFor="my-drawer-4"
                     aria-label="close sidebar"
                     className="drawer-overlay"
                   ></label>
-                  <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+
+                  <ul className="menu  w-80 min-h-full bg-[#212529] text-base-content items-center flex justify-center -top-10 relative">
                     {/* Sidebar content here */}
-                    <li>
-                      <a>Sidebar Item 1</a>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/")}>
+                        Home
+                      </button>
                     </li>
-                    <li>
-                      <a>Sidebar Item 2</a>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/about")}>
+                        About Us
+                      </button>
+                    </li>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/services")}>
+                        Our Services
+                      </button>
+                    </li>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/team")}>
+                        Team
+                      </button>
+                    </li>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/projects")}>
+                        Projects
+                      </button>
+                    </li>
+                    <li className="py-[4px] text-2xl font-bold text-[#fff]">
+                      <button onClick={navigateAndCloseDrawer("/news")}>
+                        News &amp; Articles
+                      </button>
                     </li>
                   </ul>
                 </div>
