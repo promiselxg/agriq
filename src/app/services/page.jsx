@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Agriq | Our Services",
@@ -39,12 +40,12 @@ const Services = () => {
                 At AgriQ, we work closely with our clients to ensure they get
                 the best results from our Agribusiness Strategies and Solutions.
               </p>
-              <a
-                href=""
+              <Link
+                href="/services/value-chain-services"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)] "
               >
                 <span className="relative z-10">Learn More</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -65,12 +66,12 @@ const Services = () => {
                 At AgriQ, we work closely with our clients to ensure they get
                 the best results from our Agribusiness Strategies and Solutions.
               </p>
-              <a
-                href=""
+              <Link
+                href="/services/consulting"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
               >
                 <span className="relative z-10">Learn More</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -91,12 +92,12 @@ const Services = () => {
                 At AgriQ, we work closely with our clients to ensure they get
                 the best results from our Agribusiness Strategies and Solutions.
               </p>
-              <a
-                href=""
+              <Link
+                href="/services/value-chain-services"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
               >
                 <span className="relative z-10">Learn More</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

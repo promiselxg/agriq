@@ -9,11 +9,12 @@ import {
   FiInstagram,
   FiAtSign,
   FiPhoneCall,
+  FiMenu,
 } from "react-icons/fi";
 
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
-
+  const [clicked, setClicked] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
@@ -152,7 +153,7 @@ const Header = () => {
                     <Link href="/projects">Projects</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <Link href="/projects">News &amp; Articles</Link>
+                    <Link href="/news">News &amp; Articles</Link>
                   </li>
                   <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
                     <Link
@@ -172,8 +173,8 @@ const Header = () => {
                 />
                 <div className="w-fit">
                   {/* Page content here */}
-                  <label htmlFor="my-drawer-4" className="btn">
-                    X
+                  <label htmlFor="my-drawer-4">
+                    <FiMenu className="text-3xl cursor-pointer mr-4" />
                   </label>
                 </div>
                 <div className="drawer-side h-screen z-50 top-[80px]">

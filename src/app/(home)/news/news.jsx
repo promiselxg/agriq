@@ -33,7 +33,7 @@ const SectionBlog = () => {
                     Farming
                   </h1>
                   <Link
-                    href="/"
+                    href="/this-is-a-blog-post"
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
@@ -63,7 +63,7 @@ const SectionBlog = () => {
                     Category
                   </h1>
                   <Link
-                    href="/"
+                    href="/this-is-a-blog-post"
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
@@ -94,7 +94,7 @@ const SectionBlog = () => {
                     Category
                   </h1>
                   <Link
-                    href="/"
+                    href="/this-is-a-blog-post"
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">

@@ -33,12 +33,12 @@ const SectionServices = () => {
                       get the best results from our Agribusiness Strategies and
                       Solutions.
                     </p>
-                    <a
-                      href=""
+                    <Link
+                      href="/services/value-chain-services"
                       className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)] "
                     >
                       <span className="relative z-10">Learn More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -60,12 +60,12 @@ const SectionServices = () => {
                       get the best results from our Agribusiness Strategies and
                       Solutions.
                     </p>
-                    <a
-                      href=""
+                    <Link
+                      href="/services/consulting"
                       className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
                     >
                       <span className="relative z-10">Learn More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -87,12 +87,12 @@ const SectionServices = () => {
                       get the best results from our Agribusiness Strategies and
                       Solutions.
                     </p>
-                    <a
-                      href=""
+                    <Link
+                      href="/services/value-chain-services"
                       className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
                     >
                       <span className="relative z-10">Learn More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
