@@ -65,22 +65,20 @@ const Page = ({ params }) => {
             <div className="right h-fit bg-[#F7F9FB] md:w-1/4 rounded-[10px]">
               <div className="p-2">
                 <h1 className="text-[16px] px-3 py-5">Follow us on Twitter</h1>
-                <div>
-                  <a
-                    className="twitter-timeline"
-                    data-width="400"
-                    data-height="600"
-                    data-theme="light"
-                    href="https://twitter.com/promiselxg?ref_src=twsrc%5Etfw"
-                  >
-                    Tweets by promiselxg
-                  </a>{" "}
-                  <script
-                    async
-                    src="https://platform.twitter.com/widgets.js"
-                    charSet="utf-8"
-                  ></script>
-                </div>
+                <a
+                  className="twitter-timeline"
+                  data-width="400"
+                  data-height="600"
+                  data-theme="light"
+                  href="https://twitter.com/promiselxg?ref_src=twsrc%5Etfw"
+                >
+                  Tweets by promiselxg
+                </a>{" "}
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charSet="utf-8"
+                ></script>
                 <div className="py-5 px-3 w-full">
                   <h1 className="text-[16px] font-[600]">Recent Posts</h1>
                   <ul className="text-sm list-">

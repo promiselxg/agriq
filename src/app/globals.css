@@ -11,7 +11,31 @@
   --primary--300: #f37353;
   --dark: #212529;
 }
+:root[data-theme="dark"] {
+  --primary-bright: #ffffff;
+  --primary: #d9d9d9;
+  --primary-dim: #666666;
+  --primary-dark: #202020;
+  --secondary: #ffed7f;
+  --secondary-bright: #ffea5f;
+  --background: #060708;
 
+  /* Asks browser to behave in dark mode */
+  color-scheme: dark;
+}
+
+/*
+ * Light mode theme 
+ */
+:root[data-theme="light"] {
+  --primary-bright: #000000;
+  --primary: #060708;
+  --primary-dim: #121315;
+  --primary-dark: #efefef;
+  --secondary: #002aff;
+  --secondary-bright: #4800ff;
+  --background: #ededed;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -325,4 +349,14 @@ input[type="radio"] {
   padding: 10px 0;
   font-size: 16px;
   color: #212529;
+}
+.light {
+  background: whitesmoke;
+  color: var(--dark);
+  transition: all 0.3s ease-in;
+}
+.dark {
+  background: #212529;
+  color: #fff;
+  transition: all 0.3s ease-in;
 }

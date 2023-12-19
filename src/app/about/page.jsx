@@ -28,12 +28,30 @@ export default function Home() {
           <div className="w-full md:w-[1200px] mx-auto relative -top-[50px] bg-[white] md:p-20 p-10 box_shadow">
             <div className="py-10">
               <h1 className="text-2xl capitalize mb-2 font-bold">About us</h1>
+              <p className="text-[16px] font-medium pb-2">
+                Ever wondered who&apos;s pioneering the future of smart
+                agriculture? Look no further – AgriQ Business Services Ltd is
+                your answer. Are you ready to soar to new heights in
+                agri-consulting? We are not just a player; we are the force,
+                shaping the agricultural landscape with unmatched expertise.
+              </p>
+              <p className="text-[16px] font-medium pb-2">
+                What sets us apart Is not just our extensive experience but the
+                thriving partnerships we&apos;ve built over the years. Public,
+                private, international – a diverse range of organizations trusts
+                us, and here&apos;s why. Our track record speaks volumes. We
+                pioneered Greenhouse Tomato Production with Drip Irrigation,
+                setting a new standard for innovation. Picture this: rice yields
+                catapulted by over 400%, and cassava yields per hectare soared
+                by more than 350% in Ogun state.
+              </p>
               <p className="text-[16px] font-medium ">
-                AgriQ is an agribusiness consulting company that supports
-                clients across the entire agribusiness value chain - providing
-                valuable operational and commercial solutions. With robust
-                experience and proven competence, we plan, execute and manage
-                efficient and high-yield agribusiness programs.
+                At AgriQ, commitment is our cornerstone. We&apos;re unwaveringly
+                dedicated to enhancing productivity, optimizing resources, and
+                championing sustainability in agriculture. Welcome to AgriQ
+                where intelligence and innovation converge to redefine the
+                future of farming. At AgriQ Business Services Ltd – excellence
+                is not just a goal; it&apos;s our legacy.
               </p>
             </div>
             <div className="py-10">

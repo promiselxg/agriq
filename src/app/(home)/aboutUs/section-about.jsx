@@ -11,36 +11,25 @@ const SectionAboutUs = () => {
                 Welcome
               </h1>
               <p className="my-5 text-[#000] md:text-[16px] font-medium">
-                AgriQ is at the forefront of the agricultural consulting
-                industry. We offer advanced consulting services tailored to meet
-                the needs of farmers, agribusinesses, and agricultural
-                communities. Our wealth of experience distinguishes us as a
-                consultancy firm. Our areas of expertise include tree crops,
-                arable crops, livestock and fish farming. We are proud pioneers
-                of Green House Tomato Production with Drip Irrigation in Ogun
-                State. Additionally, we have delivered intelligence in
-                agribusiness through AgriQ Learning Academy, increased rice
-                yield by more than 400% using smart agriculture techniques, and
-                enhanced cassava yield per hectare by more than 350% through
-                smart agribusiness solutions.
+                Welcome to AgriQ Business Services Ltd! We stand at the
+                forefront of smart agriculture, providing specialized consulting
+                services across all facets of the agricultural landscape. Our
+                extensive experience sets us apart as a leading agri-business
+                consulting firm, and we take pride in the trust placed in us by
+                a diverse range of public, private, and international
+                organizations, forging enduring partnerships that have thrived
+                over the years.
               </p>
               <p className="my-5 md:text-[16px] text-[#000] font-medium">
-                Our engagement with various public and private agencies, as well
-                as international initiatives, has positioned AgriQ at an
-                esteemed value above others. We understand the challenges faced
-                by farmers and businesses, and we are here to provide
-                comprehensive solutions that drive growth and prosperity. Our
-                team of experienced researchers, and consultants work tirelessly
-                to offer personalized advice, advanced technologies, and
-                strategic planning that empower you to achieve your agricultural
-                goals.
+                Our notable achievements include pioneering Greenhouse Tomato
+                Production with Drip Irrigation and significantly boosting rice
+                and cassava yields in Ogun state. At AgriQ, we are unwaveringly
+                committed to enhancing productivity, optimizing resources, and
+                championing sustainability.
               </p>
               <p className="my-5 md:text-[16px] text-[#000] font-medium">
-                As you navigate through our website, you will discover a
-                treasure trove of experience, insights, and services designed to
-                enhance agricultural productivity, optimize resources, and
-                foster sustainable practices. At AgriQ, we pride ourselves on
-                providing a holistic agricultural consulting experience.
+                Join us in the agricultural revolution, where intelligence and
+                innovation converge to reshape the future of Agriculture.
               </p>
             </div>
 

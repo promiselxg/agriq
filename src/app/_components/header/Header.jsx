@@ -1,8 +1,9 @@
 "use client";
+import { ThemeContext } from "@/context/ThemeContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import {
   FiFacebook,
   FiTwitter,
@@ -42,6 +43,8 @@ const Header = () => {
     router.push(path);
     closeDrawer();
   };
+  const { theme, toggle } = useContext(ThemeContext);
+  console.log(theme);
   return (
     <>
       <header
@@ -79,7 +82,7 @@ const Header = () => {
             </nav>
             <div className="hidden md:flex gap-5 items-center">
               <ul className="mx-auto">
-                <li className="m-2 font-semibold text-sm">
+                <li className="m-2 font-semibold text-sm" onClick={toggle}>
                   Mon - Sat 9:00am - 5:00pm / Sunday - CLOSED
                 </li>
               </ul>

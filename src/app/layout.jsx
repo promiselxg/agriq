@@ -1,7 +1,9 @@
+import { ThemeContextProvider } from "@/context/ThemeContext";
 import Footer from "./_components/Footer/Footer";
 import Header from "./_components/header/Header";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,11 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="w-full">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <div className="w-full">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

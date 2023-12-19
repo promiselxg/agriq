@@ -21,53 +21,54 @@ const WhyUs = () => {
                 </div>
               </div>
               <div className="flex items-center flex-col">
-                <h1 className="text-3xl justify-start flex text-left w-full mt-[150px] md:mt-[60px] mb-5 font-extrabold text-[#212529]">
-                  Why Choose AgriQ?
-                </h1>
-                <ul>
-                  <li className="flex gap-5 py-3">
-                    <span className="mt-2 md:mt-0 text-sm w-[43px] h-[22px] md:w-[45px] md:h-[40px] rounded-[50%] md:text-2xl bg-[green] text-white flex items-center justify-center text-center">
-                      <FiCheck />
-                    </span>
-                    <span>
-                      <h1 className="text-[20px] font-bold capitalize leading-normal text-[#112]">
-                        Quality Oranic Food
-                      </h1>
-                      <p className="text-[16px]">
+                <div className="flex items-center w-full md:h-[500px] ">
+                  <ul>
+                    <h1 className="text-3xl justify-start flex text-left w-full mt-[150px] md:mt-[60px] mb-5 font-extrabold text-[#212529]">
+                      Why Choose AgriQ?
+                    </h1>
+                    <li className="flex gap-5 py-3 items-center">
+                      <span className="mt-2 md:mt-0 text-sm w-[43px] h-[43px] md:w-[45px] md:h-[45px] rounded-[50%] md:text-2xl bg-[green] text-white flex items-center justify-center text-center">
+                        <FiCheck />
+                      </span>
+                      <span>
+                        <h1 className="text-[20px] font-bold capitalize leading-normal text-[#112]">
+                          Best Agricultural Practices
+                        </h1>
+                        {/* <p className="text-[16px]">
                         There are variation You need to be sure there is
                         anything hidden in the middle of t ```ext.
-                      </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-5 py-3">
-                    <span className="mt-2 md:mt-0 text-sm w-[42px] h-[22px] md:w-[45px] md:h-[40px] rounded-[50%] md:text-2xl bg-[#C5CE38] text-white flex items-center justify-center text-center">
-                      <FiCheck />
-                    </span>
-                    <span>
-                      <h1 className="text-[20px] font-bold capitalize leading-normal">
-                        Quality Oranic Food
-                      </h1>
-                      <p className="text-[16px]">
+                      </p> */}
+                      </span>
+                    </li>
+                    <li className="flex gap-5 py-3 items-center">
+                      <span className="mt-2 md:mt-0 text-sm w-[42px] h-[43px] md:w-[45px] md:h-[45px] rounded-[50%] md:text-2xl bg-[#C5CE38] text-white flex items-center justify-center text-center">
+                        <FiCheck />
+                      </span>
+                      <span>
+                        <h1 className="text-[20px] font-bold capitalize leading-normal">
+                          Insightful Advisory & Support
+                        </h1>
+                        {/* <p className="text-[16px]">
                         There are variation You need to be sure there is
                         anything hidden in the middle of text.
-                      </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-5 py-3">
-                    <span className="mt-2 md:mt-0 text-sm w-[42px] h-[22px] md:w-[45px] md:h-[40px] rounded-[50%] md:text-2xl bg-[#EEC044] text-white flex items-center justify-center text-center">
-                      <FiCheck />
-                    </span>
-                    <span>
-                      <h1 className="text-[20px] font-bold capitalize leading-normal">
-                        Quality Organic Food
-                      </h1>
-                      <p className="text-[16px]">
+                      </p> */}
+                      </span>
+                    </li>
+                    <li className="flex gap-5 py-3 items-center">
+                      <span className="mt-2 md:mt-0 text-sm w-[42px] h-[43px] md:w-[45px] md:h-[45px] rounded-[50%] md:text-2xl bg-[#EEC044] text-white flex items-center justify-center text-center">
+                        <FiCheck />
+                      </span>
+                      <span>
+                        <h1 className="text-[20px] font-bold capitalize leading-normal">
+                          High Yield. High Returns
+                        </h1>
+                        {/* <p className="text-[16px]">
                         There are variation You need to be sure there is
                         anything hidden in the middle of text.
-                      </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-5 py-3">
+                      </p> */}
+                      </span>
+                    </li>
+                    {/* <li className="flex gap-5 py-3">
                     <span className="mt-2 md:mt-0 text-sm w-[42px] h-[22px] md:w-[45px] md:h-[40px] rounded-[50%] md:text-2xl bg-[#F04C23] text-white flex items-center justify-center text-center">
                       <FiCheck />
                     </span>
@@ -80,8 +81,9 @@ const WhyUs = () => {
                         anything hidden in the middle of text.
                       </p>
                     </span>
-                  </li>
-                </ul>
+                  </li> */}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
