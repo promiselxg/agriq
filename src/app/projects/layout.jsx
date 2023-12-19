@@ -1,25 +1,19 @@
+import "../(home)/globals.css";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/header/Header";
 import { ThemeContextProvider } from "@/context/ThemeContext";
-import Footer from "./_components/Footer/Footer";
-import Header from "./_components/header/Header";
-import "./globals.css";
-import { Poppins } from "next/font/google";
 import ThemeProvider from "@/providers/ThemeProvider";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "800"],
-});
-
 export const metadata = {
-  title: "Agriq",
+  title: "Agriq | Our Projects",
   description:
     "A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.",
 };
 
-export default function RootLayout({ children }) {
+export default function ProjectsLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body>
         <ThemeContextProvider>
           <ThemeProvider>
             <div className="w-full">

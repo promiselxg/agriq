@@ -25,7 +25,7 @@ const Page = ({ params }) => {
                   </span>
                 </div>
               </div>
-              <div className="w-full h-fit bg-fuchsia-700">
+              <div className="w-full h-fit bg-white">
                 <Image
                   src="https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg"
                   width={1100}
