@@ -33,12 +33,12 @@ const Services = () => {
           />
           <div className="px-5 py-10 desc">
             <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-              Agribusiness Planning and Strategy Development
+              Value chain Analysis
             </h1>
             <div className="wrapper">
               <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                At AgriQ, we work closely with our clients to ensure they get
-                the best results from our Agribusiness Strategies and Solutions.
+                we specialize in value chain analysis for cassava, maize,
+                broiler, aquaculture, and oil palm
               </p>
               <Link
                 href="/services/value-chain-services"
@@ -59,41 +59,15 @@ const Services = () => {
           />
           <div className="px-5 py-10 desc">
             <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-              Agribusiness Planning and Strategy Development
+              Consulting:
             </h1>
             <div className="wrapper">
               <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                At AgriQ, we work closely with our clients to ensure they get
-                the best results from our Agribusiness Strategies and Solutions.
+                AgriQ has been at the forefront of the Value Chain development
+                project in agriculture.
               </p>
               <Link
                 href="/services/consulting"
-                className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
-              >
-                <span className="relative z-10">Learn More</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex flex-col services_box service cursor-pointer">
-          <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
-            width={350}
-            height={250}
-            alt="Agribusiness"
-            className="w-full h-[250px] min-h-[200px]"
-          />
-          <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-              Agribusiness Planning and Strategy Development
-            </h1>
-            <div className="wrapper">
-              <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                At AgriQ, we work closely with our clients to ensure they get
-                the best results from our Agribusiness Strategies and Solutions.
-              </p>
-              <Link
-                href="/services/value-chain-services"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
               >
                 <span className="relative z-10">Learn More</span>

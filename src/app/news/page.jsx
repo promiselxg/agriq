@@ -35,7 +35,7 @@ const News = () => {
                   className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                 >
                   <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                    SESAME FARMING: AN ANCIENT HIGH-YIELDING AGRIBUSINESS
+                    EMPOWERING FARMERS FOR A SUSTAINABLE FUTURE IN IKENNE ZONE
                   </h1>
                   <span className="flex items-center gap-3">
                     Learn more
@@ -58,15 +58,15 @@ const News = () => {
               </div>
               <div className="p-5 0">
                 <h1 className="text-[#777] font-semibold text-sm uppercase">
-                  Category
+                  Article
                 </h1>
                 <Link
                   href="/this-is-a-blog-post"
                   className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                 >
                   <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                    FG HARNESSES AQUACULTURE TO CREATE WEALTH AND JOBS –
-                    LOKPOBIRI
+                    PARTICIPATORY COMMUNITY PLANNING (PCP) / PARTICIPATORY
+                    LEARNING AND ACTION (PLA)
                   </h1>
                   <span className="flex items-center gap-3">
                     Learn more
@@ -76,28 +76,58 @@ const News = () => {
               </div>
             </div>
             <div className="bg-[#fff] justify-end text-start services_box">
-              <div className="bg-[url('https://web.archive.org/web/20220319145221im_/https://www.agriqservices.com/wp-content/uploads/2017/11/CBN.jpg')] w-full h-[200px] object-contain relative cursor-pointer blog_img">
+              <div className="bg-[url('https://web.archive.org/web/20220319145221im_/https://www.agriqservices.com/wp-content/uploads/2017/11/demo-pond-2.jpg')] w-full h-[200px] object-contain relative cursor-pointer blog_img">
                 <div className="w-full absolute top-0 left-0 h-[0]  inner-bg "></div>
                 <ul>
                   <li className="font-semibold text-[13px] hover:text-[#f37353] transition-all absolute bottom-10 right-5">
                     <div className="cursor-pointer btn-dark custom-btn px-6 py-2 relative bg-[#f04c23] flex flex-col leading-tight">
-                      <span className="relative z-10 text-2xl">20</span>
-                      <span className="relative z-10 uppercase">DEC</span>
+                      <span className="relative z-10 text-2xl">21</span>
+                      <span className="relative z-10 uppercase">SEP</span>
                     </div>
                   </li>
                 </ul>
               </div>
               <div className="p-5 0">
                 <h1 className="text-[#777] font-semibold text-sm uppercase">
-                  Category
+                  Article
                 </h1>
                 <Link
                   href="/this-is-a-blog-post"
                   className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                 >
                   <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                    THE APEX BANK IN NIGERIA HAS DISBURSED N44BN FOR ANCHOR
-                    BORROWERS’ PROGRAMME
+                    Ogun pledges support for SheFarmers initiative
+                  </h1>
+                  <span className="flex items-center gap-3">
+                    Learn more
+                    <HiArrowNarrowRight className="arrow" />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="bg-[#fff] justify-end text-start services_box">
+              <div className="bg-[url('https://web.archive.org/web/20220319145221im_/https://www.agriqservices.com/wp-content/uploads/2017/11/demo-pond-2.jpg')] w-full h-[200px] object-contain relative cursor-pointer blog_img">
+                <div className="w-full absolute top-0 left-0 h-[0]  inner-bg "></div>
+                <ul>
+                  <li className="font-semibold text-[13px] hover:text-[#f37353] transition-all absolute bottom-10 right-5">
+                    <div className="cursor-pointer btn-dark custom-btn px-6 py-2 relative bg-[#f04c23] flex flex-col leading-tight">
+                      <span className="relative z-10 text-2xl">18</span>
+                      <span className="relative z-10 uppercase">NOV</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-5 0">
+                <h1 className="text-[#777] font-semibold text-sm uppercase">
+                  Article
+                </h1>
+                <Link
+                  href="/this-is-a-blog-post"
+                  className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
+                >
+                  <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
+                    Food security: FG to commence aggressive dry season farming
+                    in November
                   </h1>
                   <span className="flex items-center gap-3">
                     Learn more

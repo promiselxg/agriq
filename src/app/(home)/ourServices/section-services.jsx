@@ -25,13 +25,12 @@ const SectionServices = () => {
                 />
                 <div className="px-5 py-10 desc">
                   <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Agribusiness Planning and Strategy Development
+                    Value chain Analysis
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                      At AgriQ, we work closely with our clients to ensure they
-                      get the best results from our Agribusiness Strategies and
-                      Solutions.
+                      We specialize in value chain analysis for cassava, maize,
+                      broiler, aquaculture, and oil palm
                     </p>
                     <Link
                       href="/services/value-chain-services"
@@ -52,13 +51,12 @@ const SectionServices = () => {
                 />
                 <div className="px-5 py-10 desc">
                   <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Agribusiness Planning and Strategy Development
+                    Consulting
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                      At AgriQ, we work closely with our clients to ensure they
-                      get the best results from our Agribusiness Strategies and
-                      Solutions.
+                      AgriQ has been at the forefront of the Value Chain
+                      development project in agriculture
                     </p>
                     <Link
                       href="/services/consulting"
@@ -69,7 +67,7 @@ const SectionServices = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex flex-col services_box cursor-pointer">
+              {/* <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
                   src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
                   width={350}
@@ -95,7 +93,7 @@ const SectionServices = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <ul className="flex justify-center text-center items-center mt-20">
               <li>

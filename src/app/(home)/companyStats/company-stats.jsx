@@ -32,7 +32,7 @@ const CompanyStats = () => {
                   20+
                 </h1>
                 <h1 className="text-[20px] opacity-70 font-semibold">
-                  Years of Industry Experience
+                  Years of Industry Leadership
                 </h1>
               </div>
             </div>

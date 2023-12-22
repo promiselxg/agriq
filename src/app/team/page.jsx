@@ -7,7 +7,7 @@ export default function Home() {
 
   const teamMembers = [
     {
-      name: "JIbikunle A. Onasanya",
+      name: "Ibikunle A. Onasanya",
       title: "MD/CEO",
       image: "/team/md.jpg",
       role: "all",

@@ -2,6 +2,7 @@ import "../(home)/globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/header/Header";
 import { ThemeContextProvider } from "@/context/ThemeContext";
+import AuthProvider from "@/providers/AuthProvider";
 import ThemeProvider from "@/providers/ThemeProvider";
 
 export const metadata = {
@@ -13,15 +14,17 @@ export default function AboutLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ThemeContextProvider>
-          <ThemeProvider>
-            <div className="w-full">
-              <Header />
-              {children}
-              <Footer />
-            </div>
-          </ThemeProvider>
-        </ThemeContextProvider>
+        <AuthProvider>
+          <ThemeContextProvider>
+            <ThemeProvider>
+              <div className="w-full">
+                <Header />
+                {children}
+                <Footer />
+              </div>
+            </ThemeProvider>
+          </ThemeContextProvider>
+        </AuthProvider>
       </body>
     </html>
   );

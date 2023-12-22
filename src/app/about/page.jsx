@@ -2,9 +2,18 @@
 import Link from "next/link";
 import CompanyStats from "../(home)/companyStats/company-stats";
 import { useState } from "react";
+import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
+  // const { data: session } = useSession({
+  //   required: true,
+  //   onUnauthenticated() {
+  //     redirect("/api/auth/signin?callbackUrl=/about");
+  //   },
+  // });
+  // console.log(session);
 
   const handleTabClick = (index) => {
     setActiveTab(index);

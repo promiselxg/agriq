@@ -23,7 +23,7 @@ const SectionBlog = () => {
                     <li className="font-semibold text-[13px] hover:text-[#f37353] transition-all absolute bottom-10 right-5">
                       <div className="cursor-pointer btn-dark custom-btn px-6 py-2 relative bg-[#f04c23] flex flex-col leading-tight">
                         <span className="relative z-10 text-2xl">28</span>
-                        <span className="relative z-10 uppercase">May</span>
+                        <span className="relative z-10 uppercase">SEP</span>
                       </div>
                     </li>
                   </ul>
@@ -37,7 +37,7 @@ const SectionBlog = () => {
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                      SESAME FARMING: AN ANCIENT HIGH-YIELDING AGRIBUSINESS
+                      Ogun pledges support for SheFarmers initiative
                     </h1>
                     <span className="flex items-center gap-3">
                       Learn more
@@ -67,8 +67,8 @@ const SectionBlog = () => {
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                      FG HARNESSES AQUACULTURE TO CREATE WEALTH AND JOBS –
-                      LOKPOBIRI
+                      COMMODITY ALLIANCE FORUM (CAF) 2023: FOSTERING
+                      AGRICULTURAL GROWTH AND COLLABORATION
                     </h1>
                     <span className="flex items-center gap-3">
                       Learn more
@@ -98,8 +98,8 @@ const SectionBlog = () => {
                     className="hover:cursor-pointer hover:text-[#f04c23] transition ease-in delay-[3ms] duration-30 text-[#212529] section_link"
                   >
                     <h1 className="text-[20px] font-extrabold leading-tight my-2 lowercase first-letter:capitalize">
-                      THE APEX BANK IN NIGERIA HAS DISBURSED N44BN FOR ANCHOR
-                      BORROWERS’ PROGRAMME
+                      Food security: FG to commence aggressive dry season
+                      farming in November
                     </h1>
                     <span className="flex items-center gap-3">
                       Learn more

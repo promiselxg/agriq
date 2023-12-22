@@ -15,17 +15,16 @@ const Projects = () => {
               <div className="top-0 bottom-0 w-full absolute cursor-pointer black_bg"></div>
               <div className="absolute bottom-8 w-full">
                 <h1 className="flex justify-center items-center text-center text-2xl text-white px-3 capitalize font-extrabold">
-                  project 1
+                  OGSTEP-VCDF
                 </h1>
               </div>
               <div className="project_description flex flex-col h-screen items-center justify-center relative">
                 <p className="text-[16px]  pb-4">
-                  We are implementing the Advancing Local Dairy Development in
-                  Nigeria (ALDDN), a five-year catalytic program. Using a
-                  processor-led and inclusive dairy development approach, ALDDN
-                  is improving the productivity and livelihoods of smallholder
-                  dairy farmers, empowering women, and increasing the dietary
-                  diversity of households to improve nutrition.
+                  AgriQ Business Services is actively engaged in the Ogun State
+                  Economic Project, specifically within the Ikenne Zone. Serving
+                  as the Value Chain Development Firm (VCDF), AgriQ plays a
+                  pivotal role in the project's objective to promote and develop
+                  commodity value chains in Ogun State.
                 </p>
                 <Link href="/" className="text-[rgb(80,146,87)] font-bold">
                   Read More
@@ -36,17 +35,15 @@ const Projects = () => {
               <div className="top-0 bottom-0 w-full absolute cursor-pointer black_bg"></div>
               <div className="absolute bottom-8 w-full">
                 <h1 className="flex justify-center items-center text-center text-2xl text-white px-3 capitalize font-extrabold">
-                  project 2
+                  Farmers Organization: Aggregation of farmers into groups and
+                  clusters
                 </h1>
               </div>
               <div className="project_description flex flex-col h-screen items-center justify-center relative">
                 <p className="text-[16px]  pb-4">
-                  We are implementing the Advancing Local Dairy Development in
-                  Nigeria (ALDDN), a five-year catalytic program. Using a
-                  processor-led and inclusive dairy development approach, ALDDN
-                  is improving the productivity and livelihoods of smallholder
-                  dairy farmers, empowering women, and increasing the dietary
-                  diversity of households to improve nutrition.
+                  The Farmers Aggregation Target for the OGSTEP-Agric sector was
+                  set at 2500 farmers. AgriQ successfully aggregated and
+                  mobilized 2553 farmers to participate in OGSTEP project.
                 </p>
                 <Link href="/" className="text-[rgb(80,146,87)] font-bold">
                   Read More

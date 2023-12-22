@@ -28,9 +28,9 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left capitalize">
+                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
                   PIONEERED GREEN HOUSE TOMATO PRODUCTION WITH DRIP IRRIGATION
-                  IN OGUN STATE
+                  IN OGUN STATE.
                 </h1>
               </div>
             </div>
@@ -43,10 +43,9 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left capitalize">
-                  INCREASED RICE YIELD BY MORE THAN 400% USING SMART
-                  AGRIBUSINESS SOLUTIONS DELIVERED INTELLIGENCE IN AGRIBUSINESS
-                  THROUGH AGRIQ LEARNING ACADEMY
+                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
+                  Increased Rice Yield by more than 400% using smart
+                  agribusiness solutions.
                 </h1>
               </div>
             </div>
@@ -59,9 +58,9 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left capitalize">
-                  INCREASED CASSAVA YIELD PER HECTARE BY MORE THAN 350% USING
-                  SMART AGRIBUSINESS SOLUTIONS
+                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
+                  Delivering intelligence in Agribusiness through Agriq
+                  Learning Academy.
                 </h1>
               </div>
             </div>
