@@ -2,7 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiClock, FiUser } from "react-icons/fi";
 
-const Page = ({ params }) => {
+const getData = async (slug) => {
+  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    console.log("error");
+  }
+
+  return res.json();
+};
+
+const Page = async ({ params }) => {
+  const { slug } = params;
+
+  const data = await getData(slug);
+
   return (
     <>
       <main>
