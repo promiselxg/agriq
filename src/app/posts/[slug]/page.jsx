@@ -3,6 +3,12 @@ import axios from "axios";
 import Image from "next/image";
 import { FiClock, FiUser } from "react-icons/fi";
 
+export const metadata = {
+  title: "Agriq",
+  description:
+    "A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.",
+};
+
 const SinglePage = async ({ params }) => {
   const url = "https://agriq.vercel.app/api/posts";
   const data = await axios.get(`${url}/${params.slug}`);
