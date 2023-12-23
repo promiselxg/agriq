@@ -40,10 +40,10 @@ const SectionBlog = () => {
                   <div className="gap-5 w-full justify-between">
                     <Skeleton />
                   </div>
-                  <div className="gap-5 w-full justify-between">
+                  <div className="gap-5 w-full justify-between hidden md:flex">
                     <Skeleton />
                   </div>
-                  <div className="gap-5 w-full justify-between">
+                  <div className="gap-5 w-full justify-between hidden md:flex">
                     <Skeleton />
                   </div>
                 </>
