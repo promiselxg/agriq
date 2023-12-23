@@ -2,6 +2,7 @@
 import "react-quill/dist/quill.snow.css";
 import React from "react";
 import ReactQuill from "react-quill";
+
 import EditorToolbar, { modules, formats } from "./EditorToolbar";
 
 export const Editor = ({ value, setValue }) => {

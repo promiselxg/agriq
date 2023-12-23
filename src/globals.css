@@ -360,3 +360,7 @@ input[type="radio"] {
   color: #fff;
   transition: all 0.3s ease-in;
 }
+.scrollTo svg {
+  background-color: red !important;
+  display: flex !important;
+}

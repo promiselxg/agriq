@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -7,6 +8,7 @@ import {
   FiAtSign,
   FiPhoneCall,
 } from "react-icons/fi";
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   return (
@@ -112,6 +114,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop smooth className="scrollTo" />
     </>
   );
 };

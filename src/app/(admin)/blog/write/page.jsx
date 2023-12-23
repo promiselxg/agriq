@@ -18,13 +18,13 @@ import Image from "next/image";
 const WritePost = () => {
   const { status } = useSession();
   const router = useRouter();
-
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState(null);
   const [media, setMedia] = useState("");
   const [title, setTitle] = useState("");
   const [value, setValue] = useState("");
   const [catSlug, setCatSlug] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const storage = getStorage(app);
@@ -66,7 +66,7 @@ const WritePost = () => {
   }
 
   if (status === "unauthenticated") {
-    router.push("/");
+    router.push("/api/auth/signin?callbakUrl=/blog/write");
   }
 
   const slugify = (str) =>
@@ -78,6 +78,7 @@ const WritePost = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
+    setLoading(true);
     const res = await fetch("/api/posts", {
       method: "POST",
       body: JSON.stringify({
@@ -90,6 +91,7 @@ const WritePost = () => {
     });
 
     if (res.status === 200) {
+      setLoading(false);
       const data = await res.json();
       router.push(`/posts/${data.slug}`);
     }
@@ -123,12 +125,8 @@ const WritePost = () => {
                   className="w-full bg-transparent cursor-pointer outline-none border-0"
                   onChange={(e) => setCatSlug(e.target.value)}
                 >
-                  <option value="style">style</option>
-                  <option value="fashion">fashion</option>
-                  <option value="food">food</option>
-                  <option value="culture">culture</option>
-                  <option value="travel">travel</option>
-                  <option value="coding">coding</option>
+                  <option value="event">News &amp; Events</option>
+                  <option value="news">Article</option>
                 </select>
               </div>
             </div>
@@ -163,6 +161,7 @@ const WritePost = () => {
               <button
                 className="btn btn-primary text-white"
                 onClick={handleSubmit}
+                disabled={loading}
               >
                 Publish
               </button>

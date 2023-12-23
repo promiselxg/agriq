@@ -8,6 +8,7 @@ const nextConfig = {
       "techsometimes.com",
       "sp-ao.shortpixel.ai",
       "sahelconsult.com",
+      "firebasestorage.googleapis.com",
     ],
   },
 };
