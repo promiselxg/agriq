@@ -4,9 +4,8 @@ import Image from "next/image";
 import { FiClock, FiUser } from "react-icons/fi";
 
 const SinglePage = async ({ params }) => {
-  const data = await axios.get(
-    `http://localhost:3000/api/posts/${params.slug}`
-  );
+  const url = "https://agriq.vercel.app/api/posts";
+  const data = await axios.get(`${url}/${params.slug}`);
 
   return (
     <>

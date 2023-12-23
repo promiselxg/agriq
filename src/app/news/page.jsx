@@ -10,11 +10,12 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const News = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState("");
+  const url = "https://agriq.vercel.app/api/posts";
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:3000/api/posts");
+        const response = await axios.get(`${url}`);
         setData(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);

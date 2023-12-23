@@ -12,8 +12,9 @@ const SectionBlog = () => {
   const [data, setData] = useState("");
   useEffect(() => {
     const getData = async () => {
+      const url = "https://agriq.vercel.app/api/posts";
       setLoading(true);
-      const response = await axios.get("http://localhost:3000/api/posts");
+      const response = await axios.get(`${url}`);
       setData(response);
       setLoading(false);
     };
