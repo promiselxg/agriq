@@ -23,8 +23,8 @@ const Services = () => {
                 AgriQ Business Services is actively engaged in the Ogun State
                 Economic Project, specifically within the Ikenne Zone. Serving
                 as the Value Chain Development Firm (VCDF), AgriQ plays a
-                pivotal role in the project's objective to promote and develop
-                commodity value chains in Ogun State.
+                pivotal role in the project&apos;s objective to promote and
+                develop commodity value chains in Ogun State.
               </p>
               <Link
                 href="/projects/OGSTEP-VCDF"
