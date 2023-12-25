@@ -12,7 +12,7 @@ export default function DashboardLayout({ children }) {
     <html lang="en">
       <body>
         <AuthProvider>
-          <div className="w-full bg-[#F9FAFB] h-fit md:h-screen">
+          <div className="w-full bg-[#F9FAFB] h-fit pb-10">
             <Header />
             {children}
           </div>
