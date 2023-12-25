@@ -1,6 +1,7 @@
 "use client";
 import Skeleton from "@/components/Skeleton/skeleton";
 import { extractDayAndMonth } from "@/utils/formatDate";
+import host from "@/utils/host";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +13,8 @@ const SectionBlog = () => {
   const [data, setData] = useState("");
   useEffect(() => {
     const getData = async () => {
-      const url = "https://agriq.vercel.app/api/posts";
       setLoading(true);
-      const response = await axios.get(`${url}`);
+      const response = await axios.get(`${host.url}/posts`);
       setData(response);
       setLoading(false);
     };

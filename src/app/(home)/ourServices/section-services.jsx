@@ -25,7 +25,7 @@ const SectionServices = () => {
                 />
                 <div className="px-5 py-10 desc">
                   <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Value chain Analysis
+                    Value Chain Development Services
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">

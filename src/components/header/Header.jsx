@@ -3,6 +3,8 @@ import { ThemeContext } from "@/context/ThemeContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+
 import { useContext, useEffect, useState } from "react";
 import {
   FiFacebook,
@@ -16,6 +18,9 @@ import {
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const router = useRouter();
+  const currentRoute = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
@@ -31,8 +36,6 @@ const Header = () => {
     };
   }, []);
 
-  const router = useRouter();
-
   const closeDrawer = () => {
     const checkbox = document.getElementById("my-drawer-4");
     if (checkbox) {
@@ -44,7 +47,8 @@ const Header = () => {
     closeDrawer();
   };
   const { theme, toggle } = useContext(ThemeContext);
-  console.log(theme);
+
+  console.log(currentRoute);
   return (
     <>
       <header
@@ -73,7 +77,10 @@ const Header = () => {
                         <FiAtSign className="text-[26px]" />
                       </div>
                     </span>
-                    <a className="text-white" href="mailto:business@agriq.com">
+                    <a
+                      className="text-white"
+                      href="mailto:business@agriqbusiness.com"
+                    >
                       business@agriq.com
                     </a>
                   </span>
@@ -138,33 +145,63 @@ const Header = () => {
               </div>
               <nav className="hidden md:flex items-center">
                 <ul className="flex gap-8">
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                  <li
+                    className={`${
+                      currentRoute === "/" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
                     <Link href="/" className="h-full">
                       Home
                     </Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <Link href="/about">About Us</Link>
+                  <li
+                    className={`${
+                      currentRoute === "/about" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
+                    <Link href="/about" className="h-full">
+                      About Us
+                    </Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                  <li
+                    className={`${
+                      currentRoute === "/services" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
                     <Link href="/services">Our Services</Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                  <li
+                    className={`${
+                      currentRoute === "/team" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
                     <Link href="/team">Team</Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                  <li
+                    className={`${
+                      currentRoute === "/projects" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
                     <Link href="/projects">Projects</Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
+                  <li
+                    className={`${
+                      currentRoute === "/news" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
                     <Link href="/news">News &amp; Articles</Link>
                   </li>
-                  <li className="font-semibold text-[16px] hover:text-[#f37353] transition-all">
-                    <Link
-                      href="/contact"
+                  <li
+                    className={`${
+                      currentRoute === "/contact" && "text-[#f37353]"
+                    } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
+                  >
+                    <a
+                      href="mailto:agriqbusiness.com"
                       className="btn-dark custom-btn p-3 relative bg-[#212529]"
                     >
                       <span className="relative z-10">Contact Us</span>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>

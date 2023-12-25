@@ -13,6 +13,13 @@ export default function Home() {
       role: "all",
     },
     {
+      name: "Dr Philip Jones",
+      title: "Director of Research & Strategy",
+      image: "/team/dr_philip_jones.jpg",
+      role: "all",
+      desc: "Dr Philip Jones is a Senior Research Fellow at School of Agriculture, Policy and Development at University of Reading with research area of Agricultural Economics. He has a special interest in relationship between diet and land use; food security and self-sufficiency; land use and ecosystem service provision; Economics of Integrated Pest Management.",
+    },
+    {
       name: "Fola Onasanya",
       title: "Director",
       image: "/team/Fola_Onasanya.jpg",
@@ -89,12 +96,12 @@ export default function Home() {
   return (
     <>
       <main className="relative bg-[white]">
-        <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[200px] md:h-[400px] items-center justify-center bg-cover bg-center">
+        <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[200px] md:h-[200px] items-center justify-center bg-cover bg-center">
           <div className="flex flex-col justify-center text-center items-center w-1/2">
             <h1 className="text-white text-4xl font-extrabold py-3">
               Our Team
             </h1>
-            <p className="text-[whitesmoke] text-[16px] font-medium hidden">
+            <p className="text-[whitesmoke] text-[16px] font-medium hidden md:flex">
               We have a team of professionals with extensive experience and
               expertise in agriculture, agribusiness, and management consulting.
               Our team members have a proven track record, skills, and credible
@@ -155,6 +162,9 @@ export default function Home() {
                         <p className="text-[16px] font-bold pt-2">
                           {team?.title}
                         </p>
+                        {team?.desc && (
+                          <p className="text-[0.8rem]  pt-2">{team?.desc}</p>
+                        )}
                       </div>
                     </div>
                     <Image

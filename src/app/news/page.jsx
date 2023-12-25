@@ -1,6 +1,7 @@
 "use client";
 import Skeleton from "@/components/Skeleton/skeleton";
 import { extractDayAndMonth } from "@/utils/formatDate";
+import host from "@/utils/host";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,12 +11,11 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const News = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState("");
-  const url = "https://agriq.vercel.app/api/posts";
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`${url}`);
+        const response = await axios.get(`${host?.url}/posts`);
         setData(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);

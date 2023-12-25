@@ -9,8 +9,11 @@ import {
   FiPhoneCall,
 } from "react-icons/fi";
 import ScrollToTop from "react-scroll-to-top";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const currentRoute = usePathname();
+
   return (
     <>
       <div className="w-full flex footer-bg md:p-20 p-5">
@@ -22,7 +25,7 @@ const Footer = () => {
             <ul className="mt-10 ml-0">
               <li className="font-semibold text-[13px]  transition-all">
                 <a
-                  href="mailto:"
+                  href="mailto:agriqbusiness.com"
                   className="btn-dark custom-btn p-3 relative bg-[#f37353]"
                 >
                   <span className="relative z-10">
@@ -60,24 +63,57 @@ const Footer = () => {
               <div className="grid grid-cols-2">
                 <ul className="my-3 text-[rgba(255,255,255,0.8)] font-medium">
                   <li className="py-1 hover:text-[#f37353] transition-all">
-                    <Link href="/">Home</Link>
+                    <Link
+                      href="/"
+                      className={`${currentRoute === "/" && "text-[#f37353]"}`}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li className="py-1 hover:text-[#f37353] transition-all">
-                    <Link href="/about">About us</Link>
+                    <Link
+                      href="/about"
+                      className={`${
+                        currentRoute === "/about" && "text-[#f37353]"
+                      }`}
+                    >
+                      About us
+                    </Link>
                   </li>
                   <li className="py-1">
-                    <Link href="services">Our Services</Link>
+                    <Link
+                      href="/services"
+                      className={`${
+                        currentRoute === "/services" && "text-[#f37353]"
+                      }`}
+                    >
+                      Our Services
+                    </Link>
                   </li>
                 </ul>
                 <ul className="my-3 text-[rgba(255,255,255,0.8)] font-medium">
                   <li className="py-1 hover:text-[#f37353] transition-all">
-                    <Link href="/team">Team</Link>
+                    <Link
+                      href="/team"
+                      className={`${
+                        currentRoute === "/team" && "text-[#f37353]"
+                      }`}
+                    >
+                      Team
+                    </Link>
                   </li>
                   <li className="py-1 hover:text-[#f37353] transition-all">
-                    <Link href="/news">News</Link>
+                    <Link
+                      href="/news"
+                      className={`${
+                        currentRoute === "/news" && "text-[#f37353]"
+                      }`}
+                    >
+                      News
+                    </Link>
                   </li>
                   <li className="py-1 hover:text-[#f37353] transition-all">
-                    <Link href="/contact">Contact us</Link>
+                    <a href="mailto:agriqbusiness.com">Contact us</a>
                   </li>
                 </ul>
               </div>
@@ -104,11 +140,10 @@ const Footer = () => {
                 </li>
               </ul>
               <p className="text-[#777] font-medium leading-normal">
-                20, GANIYU IKOTUN CLOSE, MARSHYHILL ESTATE, ADDO-AJAH, LEKKI-EPE
-                EXPRESSWAY LAGOS
+                1 Lekan Aina Street, Fajol Estate, Obantoko, Abeokuta, Lagos.
               </p>
               <p className="text-[rgba(255,255,255,0.8)] text-sm mt-2">
-                All rights reserved &copy;2017
+                All rights reserved &copy;2023
               </p>
             </div>
           </div>

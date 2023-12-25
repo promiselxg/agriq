@@ -28,7 +28,7 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
+                <h1 className="text-2xl md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
                   PIONEERED GREEN HOUSE TOMATO PRODUCTION WITH DRIP IRRIGATION
                   IN OGUN STATE.
                 </h1>
@@ -43,7 +43,7 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
+                <h1 className="text-2xl md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
                   Increased Rice Yield by more than 400% using smart
                   agribusiness solutions.
                 </h1>
@@ -58,7 +58,7 @@ const Hero = () => {
                 alt="image"
               />
               <div className="w-3/4 max-w-max flex flex-initial md:flex-col ml-[50px] bg-[rgba(0,0,0,0.5)] md:p-10 p-5 absolute md:top-[200px] top-[60px]">
-                <h1 className="text-sm md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
+                <h1 className="text-2xl md:text-3xl font-extrabold text-[#fff] z-10 leading-tight mb-4 justify-start text-left uppercase">
                   Delivering intelligence in Agribusiness through Agriq
                   Learning Academy.
                 </h1>

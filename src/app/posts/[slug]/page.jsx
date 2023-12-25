@@ -1,4 +1,5 @@
 import { formatCreatedAt } from "@/utils/formatDate";
+import host from "@/utils/host";
 import axios from "axios";
 import Image from "next/image";
 import { FiClock, FiUser } from "react-icons/fi";
@@ -10,8 +11,7 @@ export const metadata = {
 };
 
 const SinglePage = async ({ params }) => {
-  const url = "https://agriq.vercel.app/api/posts";
-  const data = await axios.get(`${url}/${params.slug}`);
+  const data = await axios.get(`${host.url}/posts/${params.slug}`);
 
   return (
     <>
