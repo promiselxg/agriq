@@ -48,7 +48,6 @@ const Header = () => {
   };
   const { theme, toggle } = useContext(ThemeContext);
 
-  console.log(currentRoute);
   return (
     <>
       <header

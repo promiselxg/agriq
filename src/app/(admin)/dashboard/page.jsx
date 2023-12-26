@@ -1,26 +1,23 @@
-import { FiSearch } from "react-icons/fi";
+"use client";
+
+import Link from "next/link";
 
 const Dashboard = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full h-screen">
         <div className="py-10">
           <div className="flex w-[90%] md:w-[1200px] mx-auto flex-col">
-            <div className="flex flex-col w-full md:w-2/5">
-              <h1 className="text-sm font-extrabold">News &amp; Articles</h1>
-              <p className="text-sm font-medium">
-                A list of published news &amp; articles.
-              </p>
-              <div className="w-full flex bg-[white] items-center p-2 rounded-md shadow-sm border-[#ccc] border-[1px] mt-2">
-                <FiSearch />
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Search by title..."
-                  className="px-2 w-full  bg-transparent border-0 outline-none flex items-center"
-                />
+            <div className="flex  w-full items-center justify-between">
+              <div>
+                <h1 className="text-sm font-extrabold">News &amp; Articles</h1>
+                <p className="text-sm font-medium">
+                  A list of published news &amp; articles.
+                </p>
               </div>
+              <button className="btn btn-primary w-fit">
+                <Link href="/dashboard/blog/write">Add New Post</Link>
+              </button>
             </div>
             <div className="flex w-full mt-5 bg-white  border-[1px] border-[#ccc] rounded-[5px] shadow-sm p-8">
               <div className="w-full">

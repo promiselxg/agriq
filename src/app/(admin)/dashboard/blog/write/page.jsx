@@ -1,6 +1,5 @@
 "use client";
 import { FiActivity } from "react-icons/fi";
-import Breadcrumb from "../../dashboard/(components)/breadcrumb/breadcrumb";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useSession } from "next-auth/react";
@@ -14,10 +13,11 @@ import {
 } from "firebase/storage";
 
 import { app } from "@/utils/firebase";
+import Breadcrumb from "../../(components)/breadcrumb/breadcrumb";
 
 const Editor = dynamic(
   () => {
-    return import("../../dashboard/(utils)/Editor");
+    return import("../../(utils)/Editor");
   },
   { ssr: false }
 );

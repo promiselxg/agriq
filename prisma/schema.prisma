@@ -47,7 +47,6 @@ model User {
   accounts      Account[]
   sessions      Session[]
   Post          Post[]
-  Comment       Comment[]
   @@map("users")
 }
 
@@ -80,15 +79,14 @@ model Post {
   cat       Category  @relation(fields: [catSlug], references: [slug])
   userEmail String
   user      User      @relation(fields: [userEmail], references: [email])
-  comments  Comment[]
 }
-
-model Comment {
-  id        String   @id @default(cuid()) @map("_id")
-  createdAt DateTime @default(now())
-  desc      String
-  userEmail String
-  user      User     @relation(fields: [userEmail], references: [email])
-  postSlug  String
-  post      Post     @relation(fields: [postSlug], references: [slug])
+model Team {
+  id         String   @id @default(cuid()) @map("_id")
+  createdAt  DateTime @default(now())
+  name       String
+  title      String
+  desc       String?
+  userImgUrl String?
+  twitter String?
+  linkedin String?
 }
