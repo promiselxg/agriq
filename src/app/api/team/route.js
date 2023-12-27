@@ -1,15 +1,13 @@
 import prisma from "@/utils/connect";
 import { getAuthSession } from "../auth/[...nextauth]/options";
 import { NextResponse } from "next/server";
-import { getStorage, ref, deleteObject } from "firebase/storage";
-import { app } from "@/utils/firebase";
 
 export const GET = async () => {
   try {
-    const [team] = await prisma.$transaction([
-      prisma.team.findMany({ orderBy: { createdAt: "desc" } }),
+    const [staff] = await prisma.$transaction([
+      prisma.staff.findMany({ orderBy: { createdAt: "desc" } }),
     ]);
-    return new NextResponse(JSON.stringify({ team }, { status: 200 }));
+    return new NextResponse(JSON.stringify({ staff }, { status: 200 }));
   } catch (err) {
     return new NextResponse(
       JSON.stringify({ message: "Something went wrong!" }, { status: 500 })
@@ -58,7 +56,7 @@ export const POST = async (req) => {
   }
   try {
     const body = await req.json();
-    const response = await prisma.team.create({
+    const response = await prisma.staff.create({
       data: { ...body },
     });
     return new NextResponse(JSON.stringify(response, { status: 200 }));

@@ -1,8 +1,47 @@
 "use client";
-
+import host from "@/utils/host";
+import axios from "axios";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { FiEdit, FiEye, FiTrash2 } from "react-icons/fi";
+import Swal from "sweetalert2";
 
 const Dashboard = () => {
+  const [data, setData] = useState();
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    setLoading(true);
+    const fetchUsers = async () => {
+      const response = await axios.get(`${host?.url}/posts`);
+      setData(response?.data?.posts);
+      setLoading(false);
+    };
+    fetchUsers();
+  }, []);
+
+  const deleteItem = (id) => {
+    Swal.fire({
+      title: "Are you sure you want to delete this Post?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result?.isConfirmed) {
+        const res = axios.delete(`http://localhost:3000/api/posts/${id}`);
+        if (res) {
+          Swal.fire("", "deleted Successfully", "success");
+          document.getElementById(id).style.display = "none";
+        }
+        // document.getElementById(id).style.display = "none";
+      }
+    });
+  };
+
   return (
     <>
       <div className="w-full h-screen">
@@ -28,44 +67,61 @@ const Dashboard = () => {
                       <tr>
                         <th></th>
                         <th className="text-black">Title</th>
-                        <th className="text-black">Description</th>
                         <th className="text-black">Category</th>
+                        <th className="text-black">Action</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="w-full">
                       {/* row 1 */}
-                      <tr className="bg-white">
-                        <th>1</th>
-                        <td>Cy Ganderton</td>
-                        <td>Quality Control Specialist</td>
-                        <td>
-                          <p className="bg-[blue] w-fit p-[2px] px-4 rounded-md text-white text-[12px]">
-                            Blue
-                          </p>
-                        </td>
-                      </tr>
-                      {/* row 2 */}
-                      <tr>
-                        <th>2</th>
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-                        <td>
-                          <p className="bg-[purple] w-fit p-[2px] px-4 rounded-md text-white text-[12px]">
-                            Purple
-                          </p>
-                        </td>
-                      </tr>
-                      {/* row 3 */}
-                      <tr>
-                        <th>3</th>
-                        <td>Brice Swyre</td>
-                        <td>Tax Accountant</td>
-                        <td>
-                          <p className="bg-[Red] w-fit p-[2px] px-4 rounded-md text-white text-[12px]">
-                            Red
-                          </p>
-                        </td>
-                      </tr>
+                      {loading && (
+                        <>
+                          <tr
+                            colspan="4"
+                            className="p-3 text-[red] text-bold text-center"
+                          >
+                            loading...
+                          </tr>
+                        </>
+                      )}
+                      {data &&
+                        data.map((post, i) => {
+                          return (
+                            <tr
+                              className="bg-white"
+                              key={post.id}
+                              id={post?.id}
+                            >
+                              <th>{i + 1}</th>
+                              <td className="w-[80%]">{post?.title}</td>
+
+                              <td className="capitalize">
+                                <p className="px-2 rounded bg-purple-500 text-white text-[12px]">
+                                  {post?.catSlug}
+                                </p>
+                              </td>
+                              <td className="flex items-center gap-2">
+                                <FiTrash2
+                                  className="cursor-pointer"
+                                  onClick={() => deleteItem(post?.id)}
+                                />
+                                <FiEye
+                                  onClick={() =>
+                                    router.push(`/posts/${post?.slug}`)
+                                  }
+                                  className="cursor-pointer"
+                                />
+                                <FiEdit
+                                  onClick={() =>
+                                    router.push(
+                                      `/dashboard/blog/${post?.slug}/edit`
+                                    )
+                                  }
+                                  className="cursor-pointer"
+                                />
+                              </td>
+                            </tr>
+                          );
+                        })}
                     </tbody>
                   </table>
                 </div>

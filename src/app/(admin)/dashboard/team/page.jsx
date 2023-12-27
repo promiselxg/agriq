@@ -11,8 +11,8 @@ const Team = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await axios.get(`http://localhost:3000/api/team`);
-      setData(response?.data?.team);
+      const response = await axios.get(`${host?.url}/team`);
+      setData(response?.data?.staff);
     };
     fetchUsers();
   }, []);
@@ -28,7 +28,7 @@ const Team = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result?.isConfirmed) {
-        const res = axios.delete(`http://localhost:3000/api/team/${id}`);
+        const res = axios.delete(`${host.url}/team/${id}`);
         if (res) {
           Swal.fire("", "deleted Successfully", "success");
           document.getElementById(id).style.display = "none";
@@ -76,26 +76,24 @@ const Team = () => {
                       {data &&
                         data?.map((team, i) => {
                           return (
-                            <>
-                              <tr
-                                className="bg-white"
-                                key={team?.id}
-                                id={team?.id}
-                              >
-                                <th>{i + 1}</th>
-                                <td>{team?.name}</td>
-                                <td>{team?.title}</td>
-                                <td>{team?.desc}</td>
-                                <td>
-                                  <FiTrash2
-                                    className="cursor-pointer"
-                                    onClick={() =>
-                                      deleteItem(team?.id, team?.userImgUrl)
-                                    }
-                                  />
-                                </td>
-                              </tr>
-                            </>
+                            <tr
+                              className="bg-white"
+                              key={team?.id}
+                              id={team?.id}
+                            >
+                              <th>{i + 1}</th>
+                              <td>{team?.name}</td>
+                              <td>{team?.title}</td>
+                              <td>{team?.desc}</td>
+                              <td>
+                                <FiTrash2
+                                  className="cursor-pointer"
+                                  onClick={() =>
+                                    deleteItem(team?.id, team?.userImgUrl)
+                                  }
+                                />
+                              </td>
+                            </tr>
                           );
                         })}
                     </tbody>

@@ -21,6 +21,7 @@ const Model = () => {
   const [desc, setDesc] = useState("");
   const [linkedin, setLinkedin] = useState("");
   const [twitter, setTwitter] = useState("");
+  const [teamRole, setRole] = useState("");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -69,7 +70,7 @@ const Model = () => {
   }
 
   if (status === "unauthenticated") {
-    router.push("/api/auth/signin?callbakUrl=/blog/write");
+    router.push("/api/auth/signin?callbakUrl=/dashboard/team");
   }
 
   const handleSubmit = async () => {
@@ -84,6 +85,7 @@ const Model = () => {
           userImgUrl: media,
           twitter,
           linkedin,
+          teamRole,
         }),
       });
       if (res.status === 200) {
@@ -124,6 +126,19 @@ const Model = () => {
                 placeholder="Job Title (e.g. MD)"
                 className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px]"
               />
+            </div>
+            <div className="flex flex-col py-[4px]">
+              <label>Type</label>
+              <select
+                value={teamRole}
+                onChange={(e) => setRole(e.target.value)}
+                className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px] cursor-pointer"
+              >
+                <option value="">Select Role</option>
+                <option value="all">Core Team</option>
+                <option value="expert consultant">Consultants</option>
+                <option value="facilitator">Facilitators</option>
+              </select>
             </div>
             <div className="flex flex-col py-[4px]">
               <label>Brief Description</label>
@@ -187,7 +202,7 @@ const Model = () => {
             <div className="mt-5">
               <button
                 className="btn w-fit disabled:cursor-not-allowed"
-                disabled={loading || !media || !name || !title}
+                disabled={loading || !media || !name || !title || !teamRole}
                 onClick={handleSubmit}
               >
                 Submit

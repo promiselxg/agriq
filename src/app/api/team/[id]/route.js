@@ -6,13 +6,13 @@ import { app } from "@/utils/firebase";
 export const DELETE = async (request, { params }) => {
   try {
     const { id } = params;
-    const team = await prisma.team.findUnique({
+    const staff = await prisma.staff.findUnique({
       where: {
         id,
       },
     });
-    let url = team.userImgUrl;
-    const res = await prisma.team.delete({
+    let url = staff.userImgUrl;
+    const res = await prisma.staff.delete({
       where: {
         id,
       },

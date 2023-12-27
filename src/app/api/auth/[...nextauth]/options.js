@@ -51,6 +51,9 @@ export const authOptions = {
       },
     }),
   ],
+  session: {
+    strategy: "jwt",
+  },
 };
 
 export const getAuthSession = () => getServerSession(authOptions);

@@ -80,13 +80,22 @@ model Post {
   userEmail String
   user      User      @relation(fields: [userEmail], references: [email])
 }
-model Team {
+model Staff {
   id         String   @id @default(cuid()) @map("_id")
   createdAt  DateTime @default(now())
   name       String
   title      String
   desc       String?
   userImgUrl String?
-  twitter String?
-  linkedin String?
+  twitter    String?
+  linkedin   String?
+  teamRole   String?
+}
+
+model Banner {
+  id         String   @id @default(cuid()) @map("_id")
+  createdAt  DateTime @default(now())
+  title      String
+  desc       String?
+  userImgUrl String?
 }
