@@ -15,7 +15,7 @@ const News = () => {
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`${host?.url}/posts`);
+        const response = await axios.get(`${host?.url}/posts?slug=news`);
         setData(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);

@@ -92,10 +92,15 @@ model Staff {
   teamRole   String?
 }
 
-model Banner {
+model Slider {
   id         String   @id @default(cuid()) @map("_id")
   createdAt  DateTime @default(now())
-  title      String
+  desc       String?
+  userImgUrl String?
+}
+model Slide {
+  id         String   @id @default(cuid()) @map("_id")
+  createdAt  DateTime @default(now())
   desc       String?
   userImgUrl String?
 }

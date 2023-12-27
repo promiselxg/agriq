@@ -14,7 +14,7 @@ const SectionBlog = () => {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const response = await axios.get(`${host.url}/posts`);
+      const response = await axios.get(`${host.url}/posts?slug=news`);
       setData(response);
       setLoading(false);
     };

@@ -47,12 +47,7 @@
   margin: 0;
   padding: 0;
 }
-ul {
-  list-style-type: none !important;
-}
-li {
-  list-style: none;
-}
+
 body {
   color: var(--dark);
   font-family: poppins, Arial, sans-serif;
@@ -367,4 +362,14 @@ input[type="radio"] {
 .active {
   color: green !important;
   border-bottom: 2px solid red !important;
+}
+ul {
+  list-style-type: circle !important;
+}
+ol {
+  list-style: decimal !important;
+  list-style-type: decimal !important;
+}
+li {
+  list-style: decimal !important;
 }

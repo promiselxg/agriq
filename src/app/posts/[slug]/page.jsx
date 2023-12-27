@@ -1,17 +1,20 @@
+"use client";
 import { formatCreatedAt } from "@/utils/formatDate";
 import host from "@/utils/host";
 import axios from "axios";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { FiClock, FiUser } from "react-icons/fi";
 
-export const metadata = {
-  title: "Agriq",
-  description:
-    "A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.",
-};
-
-const SinglePage = async ({ params }) => {
-  const data = await axios.get(`${host.url}/posts/${params.slug}`);
+const SinglePage = ({ params }) => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    const getData = async () => {
+      const data = await axios.get(`${host.url}/posts/${params.slug}`);
+      setData(data);
+    };
+    getData();
+  }, [params.slug]);
 
   return (
     <>
@@ -35,15 +38,17 @@ const SinglePage = async ({ params }) => {
                 </div>
               </div>
               <div className="w-full h-[600px] bg-white overflow-hidden">
-                <Image
-                  src={data?.data?.img}
-                  width={1100}
-                  height={600}
-                  alt={data?.data?.title}
-                  className="h-[600px]"
-                />
+                {data && (
+                  <Image
+                    src={data?.data?.img}
+                    width={1100}
+                    height={600}
+                    alt={data?.data?.title}
+                    className="h-[600px]"
+                  />
+                )}
               </div>
-              <div className="py-10 whitespace-break-wrap text-justify text-[16px] blog_p">
+              <div className="py-10 whitespace-break-wrap text-justify text-[16px] blog_p list-decimal">
                 <p dangerouslySetInnerHTML={{ __html: data?.data?.desc }}></p>
               </div>
             </div>
@@ -52,12 +57,9 @@ const SinglePage = async ({ params }) => {
                 <h1 className="text-[16px] px-3 py-5">Follow us on Twitter</h1>
                 <a
                   className="twitter-timeline"
-                  data-width="400"
-                  data-height="600"
-                  data-theme="light"
-                  href="https://twitter.com/promiselxg?ref_src=twsrc%5Etfw"
+                  href="https://twitter.com/agriqbiz?ref_src=twsrc%5Etfw"
                 >
-                  Tweets by promiselxg
+                  Tweets by agriqbiz
                 </a>{" "}
                 <script
                   async

@@ -2,9 +2,22 @@ import { NextResponse } from "next/server";
 import { getAuthSession } from "../auth/[...nextauth]/options";
 import prisma from "@/utils/connect";
 
-export const GET = async () => {
+export const GET = async (params) => {
+  let query;
+  let slug = params?.url?.split("?")[1]?.split("=")[1];
+  if (!slug) {
+    query = {};
+  } else {
+    query = {
+      where: {
+        catSlug: slug,
+      },
+    };
+  }
   try {
-    const [posts, count] = await prisma.$transaction([prisma.post.findMany()]);
+    const [posts, count] = await prisma.$transaction([
+      prisma.post.findMany(query),
+    ]);
     return new NextResponse(JSON.stringify({ posts, count }, { status: 200 }));
   } catch (err) {
     return new NextResponse(

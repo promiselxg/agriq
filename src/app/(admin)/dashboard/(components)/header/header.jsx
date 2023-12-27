@@ -55,6 +55,17 @@ const Header = () => {
                       Team
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/dashboard/banner"
+                      className={`${
+                        currentRoute === "/dashboard/banner" &&
+                        "border-slate-500 text-gray-900 border-b-2"
+                      } inline-flex items-center px-1   text-sm font-[600] h-[60px]`}
+                    >
+                      Site Banner
+                    </Link>
+                  </li>
                 </ul>
               </nav>
             </div>
