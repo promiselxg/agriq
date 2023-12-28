@@ -44,12 +44,12 @@ const SectionAboutUs = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=5BeOh1XHAVI"
                 light
               />
-            </div>
+            </div> */}
           </div>
           {/* <div className="left flex w-1/2 gap-3"></div> */}
         </div>
