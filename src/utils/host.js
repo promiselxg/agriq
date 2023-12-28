@@ -1,5 +1,5 @@
 const host = {
-  url: "https://agriq.vercel.app/api",
+  url: "https://www.agriqbusiness.com/api",
 };
 
 export default host;
