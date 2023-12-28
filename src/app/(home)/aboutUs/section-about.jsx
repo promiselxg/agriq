@@ -1,11 +1,13 @@
+"use client";
 import Link from "next/link";
+import ReactPlayer from "react-player";
 
 const SectionAboutUs = () => {
   return (
     <>
       <div className="w-full flex relative bg-[#e8e8e8]">
         <div className="md:w-[1200px]  mx-auto md:py-24 py-10 flex justify-between gap-7  items-center">
-          <div className="flex w-[90%] md:w-full flex-col mx-auto md:mx-0">
+          <div className="flex w-[90%] md:w-full  mx-auto md:mx-0 gap-5 items-center">
             <div className="heading">
               <h1 className="text-2xl font-bold text-[#f04c23] uppercase">
                 Welcome
@@ -31,18 +33,23 @@ const SectionAboutUs = () => {
                 Join us in the agricultural revolution, where intelligence and
                 innovation converge to reshape the future of Agriculture.
               </p>
+              <ul className="my-5">
+                <li>
+                  <Link
+                    href="/about"
+                    className="w-fit btn-dark custom-btn p-3 relative bg-[#f04c23]"
+                  >
+                    <span className="relative z-10">Learn More</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
-
-            <ul className="my-5">
-              <li>
-                <Link
-                  href="/about"
-                  className="w-fit btn-dark custom-btn p-3 relative bg-[#f04c23]"
-                >
-                  <span className="relative z-10">Learn More</span>
-                </Link>
-              </li>
-            </ul>
+            <div>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=5BeOh1XHAVI"
+                light
+              />
+            </div>
           </div>
           {/* <div className="left flex w-1/2 gap-3"></div> */}
         </div>

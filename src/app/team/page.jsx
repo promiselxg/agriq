@@ -1,98 +1,51 @@
 "use client";
+import axios from "axios";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [sortBy, setSortBy] = useState("all");
+  const [sortedTeam, setSortedTeam] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState("");
+  useEffect(() => {
+    const getData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get(`http://localhost:3000/api/team`);
+        setData(response?.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    getData();
+  }, []);
 
-  const teamMembers = [
-    {
-      name: "Ibikunle A. Onasanya",
-      title: "MD/CEO",
-      image: "/team/md.jpg",
-      role: "all",
-    },
-    {
-      name: "Dr Philip Jones",
-      title: "Director of Research & Strategy",
-      image: "/team/dr_philip_jones.jpg",
-      role: "all",
-      desc: "Dr Philip Jones is a Senior Research Fellow at School of Agriculture, Policy and Development at University of Reading with research area of Agricultural Economics. He has a special interest in relationship between diet and land use; food security and self-sufficiency; land use and ecosystem service provision; Economics of Integrated Pest Management.",
-    },
-    {
-      name: "Fola Onasanya",
-      title: "Director",
-      image: "/team/Fola_Onasanya.jpg",
-      role: "all",
-    },
-    {
-      name: "Olatomide S. Olasunkanmi",
-      title: "Monitoring and Evaluation Specialist",
-      image: "/team/Olatomide_Olasunkanmi.jpg",
-      role: "all",
-    },
-    {
-      name: "Adedotun Philip",
-      title: "Head human resources",
-      image: "/team/Adedotun_Philip.jpg",
-      role: "all",
-    },
-    {
-      name: "Ayodeji Yusuf",
-      title: "Administrative Officer",
-      image: "/team/Ayodeji_Yusuf.jpg",
-      role: "all",
-    },
-    {
-      name: "Omoniyi A. Olusegun",
-      title: "Extension Agent/Facilitator",
-      image: "/team/Omoniyi_Olusegun.jpg",
-      role: "all",
-    },
-    {
-      name: "Prof. Adewale Dipeolu ",
-      title: "Agribusiness Specialist",
-      image: "/team/Abeeb_bello.jpg",
-      role: "expert consultant",
-    },
-    {
-      name: "Prof. Adekunle Idowu ",
-      title: "Aquaculture specialist",
-      image: "/team/Abeeb_bello.jpg",
-      role: "expert consultant",
-    },
-    {
-      name: "Dr. Kazeem Bello ",
-      title: "Poultry/Livestock Specialist",
-      image: "/team/Abeeb_bello.jpg",
-      role: "expert consultant",
-    },
-    {
-      name: "Adeniyi Joshua",
-      title: "Extension Agent/Facilitator",
-      image: "/team/Abeeb_bello.jpg",
-      role: "facilitator",
-    },
-    {
-      name: "Adedamola Sodipe",
-      title: "Extension Agent/Facilitator",
-      image: "/team/Abeeb_bello.jpg",
-      role: "facilitator",
-    },
-    {
-      name: "Olayinka Idowu",
-      title: "Extension Agent/Facilitator",
-      image: "/team/Abeeb_bello.jpg",
-      role: "facilitator",
-    },
+  if (data) {
+    const teamMembers = data?.staff?.map((member) => {
+      const formattedMember = {
+        name: member.name,
+        title: member.title,
+        image: `/team/${member.id}.jpg`, // Assuming the images are stored in the "/team/" directory
+        role: member.teamRole,
+      };
 
-    // Add more contact objects as needed
-  ];
+      // Optionally include description if it exists in the input data
+      if (member.desc) {
+        formattedMember.desc = member.desc;
+      }
 
-  const sortedteamMembers = teamMembers.filter((teamMember) => {
-    return teamMember.role.toLowerCase() === sortBy.toLowerCase();
-  });
+      return formattedMember;
+    });
 
+    const sorted = teamMembers?.filter((teamMember) => {
+      return teamMember?.role?.toLowerCase() === sortBy?.toLowerCase();
+    });
+    setSortedTeam(sorted);
+  }
+  console.log(sortedTeam);
   return (
     <>
       <main className="relative bg-[white]">
@@ -149,33 +102,40 @@ export default function Home() {
             </ul>
             <div className="md:py-10">
               <div className="w-full grid md:grid-cols-4 gap-5 my-10">
-                {sortedteamMembers.map((team, index) => (
-                  <div
-                    className="bg-[#000] relative team_member cursor-pointer h-[350px] bg-center bg-cover w-full overflow-hidden project_team"
-                    key={index}
-                  >
-                    <div className="absolute top-0 bottom-0 w-full bg-[rgba(0,0,0,0.8)] h-0 overflow-hidden hidden_bg ">
-                      <div className="h-full text-center flex justify-center items-center p-10 flex-col text-white">
-                        <h1 className="text-[20px] font-extrabold capitalize">
-                          {team?.name}
-                        </h1>
-                        <p className="text-[16px] font-bold pt-2">
-                          {team?.title}
-                        </p>
-                        {team?.desc && (
-                          <p className="text-[0.8rem]  pt-2">{team?.desc}</p>
-                        )}
+                {data &&
+                  sortedTeam?.map((team) => {
+                    <>
+                      <h1>OK</h1>
+                    </>;
+                  })}
+                {/* {data &&
+                  sortedteamMembers?.map((team, index) => (
+                    <div
+                      className="bg-[#000] relative team_member cursor-pointer h-[350px] bg-center bg-cover w-full overflow-hidden project_team"
+                      key={index}
+                    >
+                      <div className="absolute top-0 bottom-0 w-full bg-[rgba(0,0,0,0.8)] h-0 overflow-hidden hidden_bg ">
+                        <div className="h-full text-center flex justify-center items-center p-10 flex-col text-white">
+                          <h1 className="text-[20px] font-extrabold capitalize">
+                            {team?.name}
+                          </h1>
+                          <p className="text-[16px] font-bold pt-2">
+                            {team?.title}
+                          </p>
+                          {team?.desc && (
+                            <p className="text-[0.8rem]  pt-2">{team?.desc}</p>
+                          )}
+                        </div>
                       </div>
+                      <Image
+                        src={team?.image}
+                        width={330}
+                        height={350}
+                        alt={team?.name}
+                        className="w-full bg-cover h-[350px]"
+                      />
                     </div>
-                    <Image
-                      src={team?.image}
-                      width={330}
-                      height={350}
-                      alt={team?.name}
-                      className="w-full bg-cover h-[350px]"
-                    />
-                  </div>
-                ))}
+                  ))} */}
               </div>
             </div>
           </div>
