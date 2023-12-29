@@ -4,7 +4,7 @@ const CompanyStats = () => {
       <div className="w-full relative h-fit bg-[black] text-white company_stats">
         <div className="w-full mx-auto md:p-20 p-10">
           <div className="flex justify-center text-center items-center flex-col">
-            <h1 className="text-[20px] opacity-70 font-semibold">
+            <h1 className="text-[20px] opacity-70 font-semibold text-[rgba(0,0,0,0.9)]">
               Company stats
             </h1>
             <h1 className="text-white text-3xl font-extrabold my-3">
@@ -13,9 +13,9 @@ const CompanyStats = () => {
             <div className="grid md:grid-cols-3 gap-3 my-4">
               <div className="p-5 md:p-10">
                 <h1 className="text-white text-4xl md:text-5xl font-extrabold">
-                  2000+
+                  2,000+
                 </h1>
-                <h1 className="text-[20px] opacity-70 font-semibold">
+                <h1 className="text-[20px] opacity-70 font-semibold text-[rgba(0,0,0,0.9)]">
                   Farmers Trained
                 </h1>
               </div>
@@ -23,7 +23,7 @@ const CompanyStats = () => {
                 <h1 className="text-white text-4xl md:text-5xl font-extrabold">
                   50+
                 </h1>
-                <h1 className="text-[20px] opacity-70 font-semibold">
+                <h1 className="text-[20px] opacity-70 font-semibold text-[rgba(0,0,0,0.9)]">
                   Years of Field Experience
                 </h1>
               </div>
@@ -31,7 +31,7 @@ const CompanyStats = () => {
                 <h1 className="text-white text-4xl md:text-5xl font-extrabold">
                   20+
                 </h1>
-                <h1 className="text-[20px] opacity-70 font-semibold">
+                <h1 className="text-[20px] opacity-70 font-semibold text-[rgba(0,0,0,0.9)]">
                   Years of Industry Leadership
                 </h1>
               </div>

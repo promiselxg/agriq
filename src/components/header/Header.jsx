@@ -24,7 +24,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
-      const triggerHeight = 200; // Set your desired scroll height here
+      const triggerHeight = 100; // Set your desired scroll height here
 
       setIsFixed(scrollHeight > triggerHeight);
     };
@@ -46,17 +46,16 @@ const Header = () => {
     router.push(path);
     closeDrawer();
   };
-  const { theme, toggle } = useContext(ThemeContext);
 
   return (
     <>
       <header
-        className={` w-full h-[80px] md:h-[150px] flex items-center bg-[whitesmoke] relative ${
+        className={` w-full h-[80px] md:h-[80px] flex items-center bg-[whitesmoke] relative ${
           isFixed ? "sticky top-0 bg-[#fff] z-50" : ""
         }`}
       >
         <div className="w-[1200px] mx-auto">
-          <div className="flex items-center justify-between md:h-[60px] relative -top-3">
+          {/* <div className="flex items-center justify-between md:h-[60px] relative -top-3">
             <nav className="hidden md:flex">
               <ul className="flex relative header__top pr-3">
                 <li className="flex z-10 p-4 gap-3 font-semibold">
@@ -128,7 +127,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="h-[80px] w-full  p-3 justify-between flex">
             <div className="flex justify-between items-center w-full">
               <div className="flex justify-between items-center">

@@ -20,11 +20,11 @@ const Projects = () => {
 
   return (
     <>
-      <div className="w-full flex h-fit bg-[#F9F9F9] pb-20 border border-t-0">
+      <div className="w-full flex h-fit bg-[#F9F9F9] pb-20">
         <div className="mx-auto w-[95%] md:w-full md:px-10">
-          <div className="pt-10 md:pt-20 md:pb-10 pb-5">
-            <div className="flex justify-center align-center text-center flex-col mb-10">
-              <h1 className="text-3xl font-extrabold my-4">Recent Projects</h1>
+          <div className="py-5">
+            <div className="flex justify-center align-center text-center flex-col">
+              <h1 className="text-4xl font-extrabold my-4">Recent Projects</h1>
             </div>
           </div>
           <div className="w-[90%] md:w-[1200px] mx-auto grid md:grid-cols-3 gap-5 ">

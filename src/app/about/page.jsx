@@ -35,31 +35,21 @@ export default function Home() {
         <div className="w-full ">
           <div className="w-full md:w-[1200px] mx-auto relative -top-[50px] bg-[white] md:p-20 p-10 box_shadow">
             <div className="py-10">
-              <h1 className="text-2xl capitalize mb-2 font-bold">About us</h1>
+              <h1 className="text-2xl capitalize mb-2 font-bold">Who we are</h1>
               <p className="text-[16px] font-medium pb-2">
-                Ever wondered who&apos;s pioneering the future of smart
-                agriculture? Look no further – AgriQ Business Services Ltd is
-                your answer. Are you ready to soar to new heights in
-                agri-consulting? We are not just a player; we are the force,
-                shaping the agricultural landscape with unmatched expertise.
-              </p>
-              <p className="text-[16px] font-medium pb-2">
-                What sets us apart Is not just our extensive experience but the
-                thriving partnerships we&apos;ve built over the years. Public,
-                private, international – a diverse range of organizations trusts
-                us, and here&apos;s why. Our track record speaks volumes. We
-                pioneered Greenhouse Tomato Production with Drip Irrigation,
-                setting a new standard for innovation. Picture this: rice yields
-                catapulted by over 400%, and cassava yields per hectare soared
-                by more than 350% in Ogun state.
+                AgriQ is an agribusiness consulting organisation that supports
+                clients across the food and agribusiness value chain-providing
+                valuable operational and commercial solutions.With proven
+                experience and expertise, we plan, execute and manage
+                highly-efficient agribusiness projects.
               </p>
               <p className="text-[16px] font-medium ">
-                At AgriQ, commitment is our cornerstone. We&apos;re unwaveringly
-                dedicated to enhancing productivity, optimizing resources, and
-                championing sustainability in agriculture. Welcome to AgriQ
-                where intelligence and innovation converge to redefine the
-                future of farming. At AgriQ Business Services Ltd – excellence
-                is not just a goal; it&apos;s our legacy.
+                Our team of technical and commercial experts have successfully
+                delivered on over 20 agribusiness programs across the
+                diversified agribusiness sector and value chain. From
+                productions, processing, packaging to marketing and exportation,
+                we draw on our experience and expertise to deliver the best
+                business results.
               </p>
             </div>
             <div className="py-10">
@@ -70,7 +60,7 @@ export default function Home() {
                     name="my_tabs_2"
                     role="tab"
                     className="tab md:w-[200px]"
-                    aria-label="Who we are"
+                    aria-label="Our History"
                     checked={activeTab === 0}
                     onChange={() => handleTabClick(0)}
                   />
@@ -78,37 +68,6 @@ export default function Home() {
                     role="tabpanel"
                     className="tab-content bg-[white] w-full md:w-[1000px] py-6 md:py-6"
                   >
-                    <p className="md:text-[16px]  leading-normal py-2">
-                      AgriQ is an agribusiness consulting organisation that
-                      supports clients across the food and agribusiness value
-                      chain-providing valuable operational and commercial
-                      solutions.
-                    </p>
-                    <p className="md:text-[16px]  leading-normal py-2">
-                      With venerable experience and proven competence, we plan,
-                      execute and manage highly-efficient agribusiness
-                      interventions.
-                    </p>
-                    <p className="md:text-[16px]  leading-normal py-2">
-                      Our team of technical and commercial experts have
-                      successfully delivered on over 20 agribusiness programs
-                      across the diversified agribusiness sector and value
-                      chain. From productions, processing, packaging to
-                      marketing and exportation, we draw on our experience and
-                      expertise to deliver the best business results.
-                    </p>
-                  </div>
-
-                  <input
-                    type="radio"
-                    name="my_tabs_2"
-                    role="tab"
-                    className="tab"
-                    aria-label="Our History"
-                    checked={activeTab === 1}
-                    onChange={() => handleTabClick(1)}
-                  />
-                  <div role="tabpanel" className="tab-content bg-[white] p-6">
                     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                       <li>
                         <div className="timeline-middle">
@@ -151,10 +110,10 @@ export default function Home() {
                     role="tab"
                     className="tab"
                     aria-label="Our Vision &amp; Mission"
-                    checked={activeTab === 2}
-                    onChange={() => handleTabClick(2)}
+                    checked={activeTab === 1}
+                    onChange={() => handleTabClick(1)}
                   />
-                  <div role="tabpanel" className="tab-content p-6">
+                  <div role="tabpanel" className="tab-content bg-[white] p-6">
                     <h1 className="py-2 text-[20px] font-bold">Our Vision</h1>
                     <p className="md:text-[16px]  py-2">
                       Our vision is to globally recognised institution,
@@ -169,14 +128,15 @@ export default function Home() {
                       knowledge and skills they need for success.
                     </p>
                   </div>
+
                   <input
                     type="radio"
                     name="my_tabs_2"
                     role="tab"
                     className="tab"
                     aria-label="Our value proposition"
-                    checked={activeTab === 3}
-                    onChange={() => handleTabClick(3)}
+                    checked={activeTab === 2}
+                    onChange={() => handleTabClick(2)}
                   />
                   <div role="tabpanel" className="tab-content p-6">
                     <h1 className="text-[20px] font-bold py-2 capitalize">

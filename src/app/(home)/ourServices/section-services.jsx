@@ -26,12 +26,39 @@ const SectionServices = () => {
                 />
                 <div className="px-5 py-10 desc">
                   <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Value Chain Development Services
+                    Agribusiness planning
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                      We specialize in value chain analysis for cassava, maize,
-                      broiler, aquaculture, and oil palm
+                      We provide feasibility assessment and develop bankable
+                      business plans for various agribusiness initiatives.
+                    </p>
+                    <Link
+                      href="/"
+                      className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)] "
+                    >
+                      <span className="relative z-10">Learn More</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col services_box cursor-pointer">
+                <Image
+                  src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Young_scientist_collecting_samples_from_the_cherry_tomato_plant_in_the_greenhouse.jpg"
+                  width={350}
+                  height={250}
+                  alt="Agribusiness"
+                  className="w-full h-[250px] min-h-[200px]"
+                />
+                <div className="px-5 py-10 desc">
+                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+                    Value Chain Development
+                  </h1>
+                  <div className="wrapper">
+                    <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
+                      We assess,identify and facilitate the execution of value
+                      chain improvement opportunities for the benefit of all
+                      stakeholders.
                     </p>
                     <Link
                       href="/services/value-chain-services"
@@ -51,13 +78,14 @@ const SectionServices = () => {
                   className="w-full h-[250px] min-h-[200px]"
                 />
                 <div className="px-5 py-10 desc">
-                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Consulting
+                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
+                    Agri extension services
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                      AgriQ has been at the forefront of the Value Chain
-                      development project in agriculture
+                      We offer technical advice and support to
+                      farmers,facilitating the supply of quality inputs and
+                      services for high yield production.
                     </p>
                     <Link
                       href="/services/consulting"
@@ -68,7 +96,34 @@ const SectionServices = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="w-full flex flex-col services_box cursor-pointer">
+              <div className="w-full flex flex-col services_box cursor-pointer">
+                <Image
+                  src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+                  width={350}
+                  height={250}
+                  alt="Agribusiness"
+                  className="w-full h-[250px] min-h-[200px]"
+                />
+                <div className="px-5 py-10 desc">
+                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
+                    value chain research
+                  </h1>
+                  <div className="wrapper">
+                    <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
+                      We conduct in-depth research and gap/opportunity analysis
+                      across production,processing,supply and demand sectors of
+                      commodity value chains.
+                    </p>
+                    <Link
+                      href="/"
+                      className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
+                    >
+                      <span className="relative z-10">Learn More</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
                   src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
                   width={350}
@@ -77,24 +132,50 @@ const SectionServices = () => {
                   className="w-full h-[250px] min-h-[200px]"
                 />
                 <div className="px-5 py-10 desc">
-                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
-                    Agribusiness Planning and Strategy Development
+                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
+                    Training and capacity building
                   </h1>
                   <div className="wrapper">
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
-                      At AgriQ, we work closely with our clients to ensure they
-                      get the best results from our Agribusiness Strategies and
-                      Solutions.
+                      We deliver onsite or virtual training on innovative
+                      agricultural practices, use of tools and techniques to
+                      improve productivity of our clients&apos;s farms.
                     </p>
                     <Link
-                      href="/services/value-chain-services"
+                      href="/"
                       className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
                     >
                       <span className="relative z-10">Learn More</span>
                     </Link>
                   </div>
                 </div>
-              </div> */}
+              </div>
+              <div className="w-full flex flex-col services_box cursor-pointer">
+                <Image
+                  src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
+                  width={350}
+                  height={250}
+                  alt="Agribusiness"
+                  className="w-full h-[250px] min-h-[200px]"
+                />
+                <div className="px-5 py-10 desc">
+                  <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
+                    Agricultural supplies
+                  </h1>
+                  <div className="wrapper">
+                    <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
+                      We facilitate and manage the supply of high quality
+                      agricultural inputs,materials and equipments .
+                    </p>
+                    <Link
+                      href="/"
+                      className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
+                    >
+                      <span className="relative z-10">Learn More</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
             <ul className="flex justify-center text-center items-center mt-20">
               <li>

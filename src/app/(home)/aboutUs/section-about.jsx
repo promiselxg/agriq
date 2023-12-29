@@ -13,25 +13,29 @@ const SectionAboutUs = () => {
                 Welcome
               </h1>
               <p className="my-5 text-[#000] md:text-[16px] font-medium">
-                Welcome to AgriQ Business Services Ltd! We stand at the
-                forefront of smart agriculture, providing specialized consulting
-                services across all facets of the agricultural landscape. Our
-                extensive experience sets us apart as a leading agri-business
-                consulting firm, and we take pride in the trust placed in us by
-                a diverse range of public, private, and international
-                organizations, forging enduring partnerships that have thrived
-                over the years.
+                Welcome to AgriQ Business Services Ltd. We are committed to
+                delivering smart agribusiness solutions through a range of
+                specialized services across the agricultural value chain. Our
+                extensive experience and proven expertise enables us provide
+                outstanding value in every engagement.
               </p>
-              <p className="my-5 md:text-[16px] text-[#000] font-medium">
+              {/* <p className="my-5 md:text-[16px] text-[#000] font-medium">
                 Our notable achievements include pioneering Greenhouse Tomato
                 Production with Drip Irrigation and significantly boosting rice
                 and cassava yields in Ogun state. At AgriQ, we are unwaveringly
                 committed to enhancing productivity, optimizing resources, and
                 championing sustainability.
+              </p> */}
+              <p className="my-5 md:text-[16px] text-[#000] font-medium">
+                We take pride our notable achievements and testimonials from a
+                diverse range of public, private, and international
+                organizations, forging enduring partnerships that have thrived
+                over the years.
               </p>
               <p className="my-5 md:text-[16px] text-[#000] font-medium">
-                Join us in the agricultural revolution, where intelligence and
-                innovation converge to reshape the future of Agriculture.
+                Join our mission to achieve sustainable agricultural development
+                in Africa through the effective application of agricultural
+                intelligence, innovation and technologies.
               </p>
               <ul className="my-5">
                 <li>

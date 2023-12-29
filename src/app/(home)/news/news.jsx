@@ -31,7 +31,7 @@ const SectionBlog = () => {
                 News &amp; Articles
               </h1>
               <h1 className="text-4xl font-extrabold">
-                What&apos;s worth knowing
+                What&apos;s worth knowing?
               </h1>
             </div>
             <div className="md:w-full grid md:grid-cols-3 gap-5">
