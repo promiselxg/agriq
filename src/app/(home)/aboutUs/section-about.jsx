@@ -27,8 +27,8 @@ const SectionAboutUs = () => {
                 championing sustainability.
               </p> */}
               <p className="my-5 md:text-[16px] text-[#000] font-medium">
-                We take pride our notable achievements and testimonials from a
-                diverse range of public, private, and international
+                We take pride in our notable achievements and testimonials from
+                a diverse range of public, private, and international
                 organizations, forging enduring partnerships that have thrived
                 over the years.
               </p>
