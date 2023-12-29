@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const News = () => {
@@ -28,6 +29,11 @@ const News = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Agriq Business | News &amp; Articles</title>
+        <meta name="description" content="News and Articles" />
+      </Helmet>
       <main>
         <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[200px] md:h-[200px] items-center justify-center bg-cover bg-center">
           <div className="flex flex-col justify-center text-center items-center w-1/2">

@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Consulting = () => {
   const handleCollapseToggle = (index) => {
@@ -9,6 +9,15 @@ const Consulting = () => {
   };
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Our Services | Consulting</title>
+        <meta
+          name="description"
+          content="AgriQ has been at the forefront of the Value Chain
+                      development project in agriculture."
+        />
+      </Helmet>
       <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] md:h-[300px] items-center justify-center bg-cover bg-center">
         <div className="flex flex-col justify-center text-center items-center md:w-1/2 w-[90%] pb-10 md:pb-0">
           <h1 className="text-white text-2xl md:text-4xl font-extrabold pt-10 md:py-3">

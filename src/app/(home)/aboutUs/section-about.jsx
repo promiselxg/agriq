@@ -7,7 +7,7 @@ const SectionAboutUs = () => {
     <>
       <div className="w-full flex relative bg-[#e8e8e8]">
         <div className="md:w-[1200px]  mx-auto md:py-24 py-10 flex justify-between gap-7  items-center">
-          <div className="flex w-[90%] md:w-full  mx-auto md:mx-0 gap-5 items-center">
+          <div className="flex w-[90%] md:w-full  mx-auto md:mx-0 gap-5 items-center flex-col-reverse md:flex-row">
             <div className="heading">
               <h1 className="text-2xl font-bold text-[#f04c23] uppercase">
                 Welcome
@@ -44,12 +44,12 @@ const SectionAboutUs = () => {
                 </li>
               </ul>
             </div>
-            {/* <div>
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=5BeOh1XHAVI"
-                light
-              />
-            </div> */}
+            <div className="md:hidden">
+              <ReactPlayer url="https://youtu.be/lMX9F9XwV1c" width="340px" />
+            </div>
+            <div className="hidden md:flex">
+              <ReactPlayer url="https://youtu.be/lMX9F9XwV1c" />
+            </div>
           </div>
           {/* <div className="left flex w-1/2 gap-3"></div> */}
         </div>

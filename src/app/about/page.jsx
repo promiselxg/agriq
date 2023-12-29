@@ -2,24 +2,23 @@
 import Link from "next/link";
 import CompanyStats from "../(home)/companyStats/company-stats";
 import { useState } from "react";
-import { useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
-  // const { data: session } = useSession({
-  //   required: true,
-  //   onUnauthenticated() {
-  //     redirect("/api/auth/signin?callbackUrl=/about");
-  //   },
-  // });
-  // console.log(session);
-
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Agriqbusiness | About Us</title>
+        <meta
+          name="description"
+          content="AgriQ is a leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources."
+        />
+      </Helmet>
       <main className="relative bg-[white]">
         <div className="w-full flex bg-[url('https://tplabs.co/agrios/wp-content/uploads/2022/07/bg-featured-title.webp')] h-[300px] items-center justify-center bg-cover">
           <div className="flex flex-col justify-center text-center items-center w-full">

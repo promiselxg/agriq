@@ -4,7 +4,7 @@ import { FiCheck } from "react-icons/fi";
 const WhyUs = () => {
   return (
     <>
-      <div className="w-full flex h-fit pb-20">
+      <div className="w-full flex h-fit md:pb-20">
         <div className="mx-auto w-[90%] md:w-[1200px]">
           <div className="pt-20 pb-10">
             <div className="flex gap-5 flex-col md:flex-row">

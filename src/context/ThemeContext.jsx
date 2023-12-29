@@ -6,14 +6,7 @@ export const ThemeContext = createContext();
 const getFromLocalStorage = () => {
   if (typeof window !== "undefined") {
     const value = localStorage.getItem("theme");
-    const themeSystem = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-
-    return value ?? themeSystem;
-    //const value = localStorage?.getItem("theme");
-    // return value || "light";
+    return value || "light";
   }
 };
 export const ThemeContextProvider = ({ children }) => {

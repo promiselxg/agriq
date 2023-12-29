@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Agriq | Our Services",
+  title: "Agriq Business | Our Services",
   description:
     "A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.",
 };

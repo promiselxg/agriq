@@ -4,6 +4,7 @@ import host from "@/utils/host";
 import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { FiClock, FiUser } from "react-icons/fi";
 
 const SinglePage = ({ params }) => {
@@ -18,6 +19,11 @@ const SinglePage = ({ params }) => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{data?.data?.title}</title>
+        <meta name="description" content={`${data?.data?.title}`} />
+      </Helmet>
       <main>
         <div className="w-full">
           <div className="w-full flex justify-between gap-5 flex-col md:flex-row md:mx-auto md:p-20 p-5">

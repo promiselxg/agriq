@@ -4,9 +4,7 @@ import { NextResponse } from "next/server";
 
 export const GET = async () => {
   try {
-    const [staff] = await prisma.$transaction([
-      prisma.staff.findMany({ orderBy: { createdAt: "desc" } }),
-    ]);
+    const [staff] = await prisma.$transaction([prisma.staff.findMany()]);
     return new NextResponse(JSON.stringify({ staff }, { status: 200 }));
   } catch (err) {
     return new NextResponse(

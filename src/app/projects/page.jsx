@@ -4,6 +4,7 @@ import host from "@/utils/host";
 import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 const Services = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState("");
@@ -19,6 +20,11 @@ const Services = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Agriqbusiness | Projects</title>
+        <meta name="description" content="Agriq Business | Projects" />
+      </Helmet>
       <div className="w-full flex bg-[url('https://sahelconsult.com/wp-content/uploads/2023/01/page-banner-team-members.jpg')] h-[200px] items-center justify-center bg-cover bg-center">
         <div className="flex flex-col justify-center text-center items-center w-1/2">
           <h1 className="text-white text-4xl font-extrabold py-3">

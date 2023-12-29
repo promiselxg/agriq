@@ -1,6 +1,7 @@
 import Image from "next/image";
 import WhyUs from "./why-us";
 import Link from "next/link";
+import Partners from "../partners/partners";
 
 const SectionServices = () => {
   return (
@@ -109,6 +110,7 @@ const SectionServices = () => {
         </div>
       </div>
       <WhyUs />
+      <Partners />
     </>
   );
 };
