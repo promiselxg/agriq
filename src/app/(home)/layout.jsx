@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Agriq",
+  title: "Agriqbusiness | Home",
   description:
     "A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.",
 };
