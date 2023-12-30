@@ -47,7 +47,7 @@ const Team = () => {
           )}
           <div className="w-full grid md:grid-cols-4 gap-5">
             {data &&
-              data?.staff?.slice(0, 4)?.map((team) => {
+              data?.staff?.slice(0, 8)?.map((team) => {
                 return (
                   <div className="" key={team?.id}>
                     <div className="">
@@ -56,7 +56,7 @@ const Team = () => {
                         width={350}
                         height={400}
                         alt={team?.name}
-                        className="w-[350px] h-[400px]"
+                        className="w-[350px] h-[350px]"
                       />
                     </div>
                     <div className="bg-[#f9f9f9] py-10 rounded-[8px] relative -top-10 w-[80%] justify-center flex flex-col items-center text-center mx-auto box_shadow h-fit">

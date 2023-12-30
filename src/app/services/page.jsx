@@ -25,7 +25,7 @@ const Services = () => {
       <div className="w-[90%] md:w-[1200px] grid md:grid-cols-3 gap-5 gap-y-10 mx-auto my-20">
         <div className="w-full flex flex-col services_box service cursor-pointer h-[400px]">
           <Image
-            src="/services/1.jpg"
+            src="/services/planning.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
@@ -51,7 +51,7 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+            src="/services/value_chain.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
@@ -77,7 +77,7 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="/services/2.jpg"
+            src="/services/extension.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
@@ -131,7 +131,7 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="/services/plan.jpg"
+            src="/services/capacity.webp"
             width={350}
             height={250}
             alt="Agribusiness"
@@ -158,7 +158,7 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="/services/5.jpg"
+            src="/services/supply.jpg"
             width={350}
             height={250}
             alt="Agribusiness"

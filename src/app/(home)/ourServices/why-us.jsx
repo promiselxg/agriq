@@ -8,15 +8,15 @@ const WhyUs = () => {
         <div className="mx-auto w-[90%] md:w-[1200px]">
           <div className="pt-20 pb-10">
             <div className="flex gap-8 flex-col md:flex-row  items-center">
-              <div className="left w-[95%] mx-auto md:mx-0 md:w-1/2 relative h-[300px] md:h-[400px] mb-[150px] md:mb-0">
+              <div className="left w-[95%] mx-auto md:mx-0 md:w-1/2 relative h-[300px] md:h-[430px] mb-[150px] md:mb-0">
                 <div className="w-[10%] bg-[#4CAF48] h-[350px] md:h-[330px] absolute top-[30px] md:top-[50px] -left-5 rounded-l-[20px]"></div>
                 <div className="absolute top-0 left-0 rounded-[20px] overflow-hidden">
                   <Image
-                    src="/services/3.jpg"
-                    width={1280}
-                    height={720}
+                    src="/services/man.png"
+                    width={1460}
+                    height={988}
                     alt=""
-                    className="z-10 w-full bg-contain h-[400px] md:h-[400px]"
+                    className="z-10 w-full bg-contain h-[400px] md:h-[430px]"
                   />
                 </div>
               </div>
