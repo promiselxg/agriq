@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/Footer/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             <div className="w-full">
               <Header />
               {children}
+              <SpeedInsights />
               <Footer />
             </div>
           </ThemeProvider>
