@@ -13,7 +13,7 @@ const CompanyStats = () => {
             <div className="grid md:grid-cols-3 gap-3 my-4">
               <div className="p-5 md:p-10">
                 <h1 className="text-white text-4xl md:text-5xl font-extrabold">
-                  2,000+
+                  10,000+
                 </h1>
                 <h1 className="text-[20px] opacity-70 font-semibold text-[rgba(0,0,0,0.9)]">
                   Farmers Trained

@@ -116,7 +116,7 @@ export default function Home() {
                   <div role="tabpanel" className="tab-content bg-[white] p-6">
                     <h1 className="py-2 text-[20px] font-bold">Our Vision</h1>
                     <p className="md:text-[16px]  py-2">
-                      Our vision is to globally recognized institution,
+                      Our vision is to become a globally recognized institution,
                       committed to maximizing the potentials agricultural and
                       agro based of enterprises in Africa-through the provision
                       of world-class innovative, human capital and agro-smart
