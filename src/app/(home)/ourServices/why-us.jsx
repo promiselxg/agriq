@@ -67,7 +67,7 @@ const WhyUs = () => {
                       <BiCheckCircle className="text-[30px]  md:text-3xl text-[#EEC044]" />
                       <span>
                         <h1 className="text-[16px]  capitalize leading-normal">
-                          Boost Cassava Production yields by over 300%.
+                          Boosted Cassava Production yields by over 300%.
                         </h1>
                       </span>
                     </li>
@@ -75,7 +75,7 @@ const WhyUs = () => {
                       <BiCheckCircle className="text-[30px]  md:text-3xl text-[#EEC044]" />
                       <span>
                         <h1 className="text-[16px]  capitalize leading-normal">
-                          Boost Rice Production yields by over 400%.
+                          Boosted Rice Production yields by over 400%.
                         </h1>
                       </span>
                     </li>

@@ -25,14 +25,14 @@ const Services = () => {
       <div className="w-[90%] md:w-[1200px] grid md:grid-cols-3 gap-5 gap-y-10 mx-auto my-20">
         <div className="w-full flex flex-col services_box service cursor-pointer h-[400px]">
           <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Young_scientist_collecting_samples_from_the_cherry_tomato_plant_in_the_greenhouse.jpg"
+            src="/services/plan.png"
             width={350}
             height={250}
             alt="Agribusiness"
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               Agribusiness planning
             </h1>
             <div className="wrapper">
@@ -58,7 +58,7 @@ const Services = () => {
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               Value Chain Development
             </h1>
             <div className="wrapper">
@@ -84,7 +84,7 @@ const Services = () => {
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               Agri extension services
             </h1>
             <div className="wrapper">
@@ -104,14 +104,14 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+            src="/services/value_chain.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               value chain research
             </h1>
             <div className="wrapper">
@@ -131,14 +131,14 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+            src="/services/1.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               Training and capacity building
             </h1>
             <div className="wrapper">
@@ -148,7 +148,7 @@ const Services = () => {
                 of our clients&apos;s farms.
               </p>
               <Link
-                href="/services/consulting"
+                href="/services"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
               >
                 <span className="relative z-10">Learn More</span>
@@ -158,14 +158,14 @@ const Services = () => {
         </div>
         <div className="w-full flex flex-col services_box service cursor-pointer">
           <Image
-            src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+            src="/services/5.jpg"
             width={350}
             height={250}
             alt="Agribusiness"
             className="w-full h-[250px] min-h-[200px]"
           />
           <div className="px-5 py-10 desc">
-            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all">
+            <h1 className="text-[18px] font-[600] cursor-pointer hover:text-[rgb(80,146,87)] transition-all capitalize">
               Agricultural supplies
             </h1>
             <div className="wrapper">
@@ -174,7 +174,7 @@ const Services = () => {
                 inputs,materials and equipments .
               </p>
               <Link
-                href="/services/consulting"
+                href="/services"
                 className="w-fit btn-dark custom-btn p-3 relative bg-[rgb(80,146,87)]  "
               >
                 <span className="relative z-10">Learn More</span>

@@ -37,7 +37,7 @@ export default function Home() {
             <div className="py-10">
               <h1 className="text-2xl capitalize mb-2 font-bold">Who we are</h1>
               <p className="text-[16px] font-medium pb-2">
-                AgriQ is an agribusiness consulting organisation that supports
+                AgriQ is an agribusiness consulting organization that supports
                 clients across the food and agribusiness value chain-providing
                 valuable operational and commercial solutions.With proven
                 experience and expertise, we plan, execute and manage
@@ -58,7 +58,7 @@ export default function Home() {
                   <input
                     type="radio"
                     name="my_tabs_2"
-                    role="tab"
+                    role="tab capitalize"
                     className="tab md:w-[200px]"
                     aria-label="Our History"
                     checked={activeTab === 0}
@@ -108,7 +108,7 @@ export default function Home() {
                     type="radio"
                     name="my_tabs_2"
                     role="tab"
-                    className="tab"
+                    className="tab capitalize"
                     aria-label="Our Vision &amp; Mission"
                     checked={activeTab === 1}
                     onChange={() => handleTabClick(1)}
@@ -116,7 +116,7 @@ export default function Home() {
                   <div role="tabpanel" className="tab-content bg-[white] p-6">
                     <h1 className="py-2 text-[20px] font-bold">Our Vision</h1>
                     <p className="md:text-[16px]  py-2">
-                      Our vision is to globally recognised institution,
+                      Our vision is to globally recognized institution,
                       committed to maximizing the potentials agricultural and
                       agro based of enterprises in Africa-through the provision
                       of world-class innovative, human capital and agro-smart
@@ -133,7 +133,7 @@ export default function Home() {
                     type="radio"
                     name="my_tabs_2"
                     role="tab"
-                    className="tab"
+                    className="tab capitalize"
                     aria-label="Our value proposition"
                     checked={activeTab === 2}
                     onChange={() => handleTabClick(2)}
@@ -144,7 +144,7 @@ export default function Home() {
                     </h1>
                     <ul>
                       <li className="md:text-[16px] py-3">
-                        We bring to each clients over 40 years of both
+                        We bring to each clients over 50 years of combined
                         functional expertise and sector-focused experienced in
                         the Agriculture and Agro-services sector- with
                         internationally-recognized accomplishments.

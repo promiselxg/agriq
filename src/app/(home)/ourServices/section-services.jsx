@@ -18,7 +18,7 @@ const SectionServices = () => {
             <div className="w-full grid md:grid-cols-3 gap-5 gap-y-10">
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
-                  src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Young_scientist_collecting_samples_from_the_cherry_tomato_plant_in_the_greenhouse.jpg"
+                  src="/services/plan.png"
                   width={350}
                   height={250}
                   alt="Agribusiness"
@@ -98,7 +98,7 @@ const SectionServices = () => {
               </div>
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
-                  src="https://www.syngenta.com/sites/syngenta/files/2023-03/Pictures%20website/Office_Colleagues_Having_Meeting_In_Front_Of_Large_Plant_Display.jpg"
+                  src="/services/value_chain.jpg"
                   width={350}
                   height={250}
                   alt="Agribusiness"
@@ -125,7 +125,7 @@ const SectionServices = () => {
               </div>
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
-                  src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
+                  src="/services/1.jpg"
                   width={350}
                   height={250}
                   alt="Agribusiness"
@@ -139,7 +139,7 @@ const SectionServices = () => {
                     <p className="text-[#777] text-[14px] leading-normal mt-3 mb-8">
                       We deliver onsite or virtual training on innovative
                       agricultural practices, use of tools and techniques to
-                      improve productivity of our clients&apos;s farms.
+                      improve productivity of our clients&apos; farms.
                     </p>
                     <Link
                       href="/"
@@ -152,7 +152,7 @@ const SectionServices = () => {
               </div>
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
-                  src="https://www.syngenta.com/sites/syngenta/files/2023-10/Agronomist_in_the_cornfield_for_Syngenta_in_S%C3%A3o_Paulo_State_Brazil.jpg"
+                  src="/services/5.jpg"
                   width={350}
                   height={250}
                   alt="Agribusiness"

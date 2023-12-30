@@ -48,7 +48,15 @@ const Footer = () => {
               <div className="flex flex-col my-3 text-[rgba(255,255,255,0.8))] text-[16px] leading-relaxed">
                 <span className="flex items-center gap-2 font-[600]">
                   <FiAtSign />
-                  info@gmail.com
+                  info@agriqbusiness.com
+                </span>
+                <span className="flex items-center gap-2 font-[600]">
+                  <FiAtSign />
+                  kunlabob@gmail.com
+                </span>
+                <span className="flex items-center gap-2 font-[600]">
+                  <FiAtSign />
+                  kunlabob@yahoo.com
                 </span>
                 <span className="flex items-center gap-2 font-[600]">
                   <FiPhoneCall />

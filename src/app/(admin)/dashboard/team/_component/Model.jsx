@@ -22,6 +22,7 @@ const Model = () => {
   const [linkedin, setLinkedin] = useState("");
   const [twitter, setTwitter] = useState("");
   const [teamRole, setRole] = useState("");
+  const [hierarchy, setHierarchy] = useState(0);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -86,6 +87,7 @@ const Model = () => {
           twitter,
           linkedin,
           teamRole,
+          hierarchy,
         }),
       });
       if (res.status === 200) {
@@ -127,18 +129,40 @@ const Model = () => {
                 className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px]"
               />
             </div>
-            <div className="flex flex-col py-[4px]">
-              <label>Type</label>
-              <select
-                value={teamRole}
-                onChange={(e) => setRole(e.target.value)}
-                className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px] cursor-pointer"
-              >
-                <option value="">Select Role</option>
-                <option value="all">Core Team</option>
-                <option value="expert consultant">Consultants</option>
-                <option value="facilitator">Facilitators</option>
-              </select>
+            <div className="flex gap-5 py-[4px] w-full">
+              <div className="flex w-[30%] flex-col">
+                <label>Type</label>
+                <select
+                  value={teamRole}
+                  onChange={(e) => setRole(e.target.value)}
+                  className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px] cursor-pointer"
+                >
+                  <option value="">Select Role</option>
+                  <option value="all">Core Team</option>
+                  <option value="expert consultant">Consultants</option>
+                  <option value="facilitator">Facilitators</option>
+                </select>
+              </div>
+              <div className="flex-col flex w-[70%]">
+                <label className="flex items-center">
+                  Hierarchy&nbsp;
+                  <span className="text-[12px] text-red-500">
+                    (1 = Highest, 5 = Lowest)
+                  </span>
+                </label>
+                <select
+                  value={hierarchy}
+                  onChange={(e) => setHierarchy(e.target.value)}
+                  className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px] cursor-pointer"
+                >
+                  <option value="">Select Hierarchy</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
             </div>
             <div className="flex flex-col py-[4px]">
               <label>Brief Description</label>

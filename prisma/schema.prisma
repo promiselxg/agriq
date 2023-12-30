@@ -90,6 +90,7 @@ model Staff {
   twitter    String?
   linkedin   String?
   teamRole   String?
+  hierarchy  String?
 }
 
 model Slider {

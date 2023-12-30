@@ -67,7 +67,7 @@ export default function Home() {
                   data?.staff?.map((team) => {
                     return (
                       <div
-                        className="bg-[#000] relative team_member cursor-pointer h-[350px] bg-center bg-cover w-full overflow-hidden project_team"
+                        className="bg-[#000] relative team_member cursor-pointer h-[300px] bg-center bg-cover w-full overflow-hidden project_team"
                         key={team?.id}
                       >
                         <div className="absolute top-0 bottom-0 w-full bg-[rgba(0,0,0,0.8)] h-0 overflow-hidden hidden_bg ">
@@ -79,7 +79,7 @@ export default function Home() {
                               {team?.title}
                             </p>
                             {team?.desc && (
-                              <p className="text-[0.8rem]  pt-2">
+                              <p className="text-[0.8rem] pt-2 leading-tight">
                                 {team?.desc}
                               </p>
                             )}
@@ -88,9 +88,9 @@ export default function Home() {
                         <Image
                           src={team?.userImgUrl}
                           width={330}
-                          height={350}
+                          height={300}
                           alt={team?.name}
-                          className="w-full bg-cover h-[350px]"
+                          className="w-full bg-cover h-[300px]"
                         />
                       </div>
                     );
