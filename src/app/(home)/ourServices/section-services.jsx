@@ -44,7 +44,7 @@ const SectionServices = () => {
               </div>
               <div className="w-full flex flex-col services_box cursor-pointer">
                 <Image
-                  src="/services/value_chain.jpg"
+                  src="/services/value_chain_dev.jpg"
                   width={350}
                   height={250}
                   alt="Agribusiness"
