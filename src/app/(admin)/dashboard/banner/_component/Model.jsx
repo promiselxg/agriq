@@ -18,6 +18,7 @@ const Model = () => {
   const [media, setMedia] = useState("");
   const [desc, setDesc] = useState("");
   const [loading, setLoading] = useState(false);
+  const [hierarchy, setHierarchy] = useState("");
 
   useEffect(() => {
     const storage = getStorage(app);
@@ -76,6 +77,7 @@ const Model = () => {
         body: JSON.stringify({
           desc,
           userImgUrl: media,
+          hierarchy,
         }),
       });
       if (res.status === 200) {
@@ -106,6 +108,26 @@ const Model = () => {
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
               />
+            </div>
+            <div className="flex-col flex">
+              <label className="flex items-center">
+                Hierarchy&nbsp;
+                <span className="text-[12px] text-red-500">
+                  (1 = Highest, 5 = Lowest)
+                </span>
+              </label>
+              <select
+                value={hierarchy}
+                onChange={(e) => setHierarchy(e.target.value)}
+                className="p-2 outline-none border-[1px] border-[rgba(0,0,0,0.3)] bg-[#e8e8e8] rounded-[5px] cursor-pointer"
+              >
+                <option value="">Select Hierarchy</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
             <div className="flex flex-col">
               <input

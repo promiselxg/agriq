@@ -93,15 +93,10 @@ model Staff {
   hierarchy  String?
 }
 
-model Slider {
-  id         String   @id @default(cuid()) @map("_id")
-  createdAt  DateTime @default(now())
-  desc       String?
-  userImgUrl String?
-}
 model Slide {
   id         String   @id @default(cuid()) @map("_id")
   createdAt  DateTime @default(now())
   desc       String?
   userImgUrl String?
+  hierarchy  String?
 }
