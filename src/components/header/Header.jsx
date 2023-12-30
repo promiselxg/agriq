@@ -195,7 +195,7 @@ const Header = () => {
                     } font-semibold text-[16px] hover:text-[#f37353] transition-all`}
                   >
                     <a
-                      href="mailto:agriqbusiness.com"
+                      href="mailto:info@agriqbusiness.com"
                       className="btn-dark custom-btn p-3 relative bg-[#212529]"
                     >
                       <span className="relative z-10">Contact Us</span>
