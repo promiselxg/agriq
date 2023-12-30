@@ -43,19 +43,22 @@ const SinglePage = ({ params }) => {
                   </span>
                 </div>
               </div>
-              <div className="w-full h-[600px] bg-white overflow-hidden">
+              <div className="w-full md:h-[600px] bg-white overflow-hidden">
                 {data && (
                   <Image
                     src={data?.data?.img}
                     width={1100}
                     height={600}
                     alt={data?.data?.title}
-                    className="h-[600px]"
+                    className="md:h-[600px]"
                   />
                 )}
               </div>
-              <div className="py-10 whitespace-break-wrap text-justify text-[16px] blog_p list-decimal">
-                <p dangerouslySetInnerHTML={{ __html: data?.data?.desc }}></p>
+              <div className="py-10 text-justify text-[16px] blog_p list-decimal">
+                <p
+                  dangerouslySetInnerHTML={{ __html: data?.data?.desc }}
+                  className="text-sm leading-snug whitespace-wrap"
+                ></p>
               </div>
             </div>
             <div className="right h-fit bg-[#F7F9FB] md:w-1/4 rounded-[10px]">
