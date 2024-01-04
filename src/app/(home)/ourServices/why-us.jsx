@@ -30,6 +30,22 @@ const WhyUs = () => {
                       <BiCheckCircle className="text-[30px] md:text-3xl text-[#EEC044]" />
                       <span>
                         <h1 className="text-[16px]  capitalize leading-normal">
+                          Seasoned & Experienced Agribusiness Experts
+                        </h1>
+                      </span>
+                    </li>
+                    <li className="flex gap-5 py-3 items-center">
+                      <BiCheckCircle className="text-[30px] md:text-3xl text-[#EEC044]" />
+                      <span>
+                        <h1 className="text-[16px]  capitalize leading-normal">
+                          Impressive Industry Track Record
+                        </h1>
+                      </span>
+                    </li>
+                    <li className="flex gap-5 py-3 items-center">
+                      <BiCheckCircle className="text-[30px] md:text-3xl text-[#EEC044]" />
+                      <span>
+                        <h1 className="text-[16px]  capitalize leading-normal">
                           Best Agricultural Practices
                         </h1>
                       </span>
