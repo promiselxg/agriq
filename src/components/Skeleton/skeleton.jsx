@@ -9,7 +9,6 @@ const Skeleton = () => {
         <div className="skeleton h-4 w-full"></div>
         <div className="skeleton h-4 w-full"></div>
       </div>
-      ;
     </>
   );
 };

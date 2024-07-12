@@ -14,6 +14,8 @@ export const GET = async (params) => {
       },
     };
   }
+  query.orderBy = { createdAt: "desc" };
+
   try {
     const [posts, count] = await prisma.$transaction([
       prisma.post.findMany(query),

@@ -357,6 +357,6 @@ input[type="radio"] {
 }
 .dark {
   background: #212529;
-  color: #fff;
+  color: var(--primary);
   transition: all 0.3s ease-in;
 }

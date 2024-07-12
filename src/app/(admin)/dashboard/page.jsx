@@ -32,7 +32,7 @@ const Dashboard = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result?.isConfirmed) {
-        const res = axios.delete(`http://localhost:3000/api/posts/${id}`);
+        const res = axios.delete(`${host.url}/posts/${id}`);
         if (res) {
           Swal.fire("", "deleted Successfully", "success");
           document.getElementById(id).style.display = "none";
