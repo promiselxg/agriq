@@ -76,10 +76,10 @@ const Dashboard = () => {
                       {loading && (
                         <>
                           <tr
-                            colspan="4"
+                            colSpan="4"
                             className="p-3 text-[red] text-bold text-center"
                           >
-                            loading...
+                            <td>loading...</td>
                           </tr>
                         </>
                       )}

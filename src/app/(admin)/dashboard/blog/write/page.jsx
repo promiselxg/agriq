@@ -4,16 +4,8 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import {
-  getStorage,
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-} from "firebase/storage";
-
-import { app } from "@/utils/firebase";
 import Breadcrumb from "../../(components)/breadcrumb/breadcrumb";
+import axios from "axios";
 
 const Editor = dynamic(
   () => {
@@ -25,48 +17,14 @@ const Editor = dynamic(
 const WritePost = () => {
   const { status } = useSession();
   const router = useRouter();
-  const [open, setOpen] = useState(false);
-  const [file, setFile] = useState(null);
-  const [media, setMedia] = useState("");
+  //const [file, setFile] = useState(null);
+  const [selectedImages, setselectedImages] = useState([]);
+  const [files, setFiles] = useState([]);
   const [title, setTitle] = useState("");
   const [value, setValue] = useState("");
   const [catSlug, setCatSlug] = useState("");
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    const storage = getStorage(app);
-    const upload = () => {
-      const name = new Date().getTime() + file.name;
-      const storageRef = ref(storage, name);
-
-      const uploadTask = uploadBytesResumable(storageRef, file);
-
-      uploadTask.on(
-        "state_changed",
-        (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log("Upload is " + progress + "% done");
-          switch (snapshot.state) {
-            case "paused":
-              console.log("Upload is paused");
-              break;
-            case "running":
-              console.log("Upload is running");
-              break;
-          }
-        },
-        (error) => {},
-        () => {
-          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            setMedia(downloadURL);
-          });
-        }
-      );
-    };
-
-    file && upload();
-  }, [file]);
+  const [isLoading, setisLoading] = useState(false);
 
   if (status === "loading") {
     return <div className="text-[red]">Loading...</div>;
@@ -86,21 +44,74 @@ const WritePost = () => {
 
   const handleSubmit = async () => {
     setLoading(true);
-    const res = await fetch("/api/posts", {
-      method: "POST",
-      body: JSON.stringify({
-        title,
-        desc: value,
-        img: media,
-        slug: slugify(title),
-        catSlug: catSlug || "news", //If not selected, choose the general category
-      }),
-    });
-
-    if (res.status === 200) {
+    const timestamp = Math.round(new Date().getTime() / 1000);
+    try {
+      const list = await Promise.all(
+        Object.values(files).map(async (file) => {
+          const formData = new FormData();
+          formData.append("file", file);
+          formData.append("upload_preset", "agriqbusiness");
+          formData.append("timestamp", timestamp);
+          formData.append(
+            "api_key",
+            process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY
+          );
+          setisLoading(true);
+          const uploadRes = await axios.post(
+            `https://api.cloudinary.com/v1_1/promiselxg/image/upload`,
+            formData
+          );
+          const { data } = uploadRes;
+          return data;
+        })
+      );
+      if (list) {
+        const res = await fetch("/api/posts", {
+          method: "POST",
+          body: JSON.stringify({
+            title,
+            desc: value,
+            img: list[0].secure_url,
+            slug: slugify(title),
+            catSlug: catSlug || "news", //If not selected, choose the general category
+          }),
+        });
+        if (res.status === 200) {
+          const data = await res.json();
+          router.push(`/posts/${data.slug}`);
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
       setLoading(false);
-      const data = await res.json();
-      router.push(`/posts/${data.slug}`);
+      setisLoading(false);
+    }
+  };
+
+  //  Select File to Upload
+  const imageHandleChange = (e) => {
+    setselectedImages([]);
+    if (e.target.files) {
+      const filesArray = Array.from(e.target.files);
+      const selectedFiles = [];
+      filesArray.forEach((file) => {
+        if (file.size > 5 * 1024 * 1024) {
+          // File size is bigger than 5MB
+          toast({
+            variant: "destructive",
+            title: "Selected File is > 5MB.",
+            description: `File "${file.name}" exceeds 5MB limit.`,
+          });
+        } else {
+          // File size is within the limit
+          selectedFiles.push(file);
+        }
+      });
+      setFiles(selectedFiles);
+      const fileArray = selectedFiles.map((file) => URL.createObjectURL(file));
+      setselectedImages((prevImages) => prevImages.concat(fileArray));
+      selectedFiles.forEach((file) => URL.revokeObjectURL(file));
     }
   };
 
@@ -131,47 +142,44 @@ const WritePost = () => {
                 <select
                   className="w-full bg-transparent cursor-pointer outline-none border-0"
                   onChange={(e) => setCatSlug(e.target.value)}
+                  required
                 >
+                  <option value="">select category</option>
                   <option value="news">News &amp; Events</option>
                   <option value="projects">Projects</option>
                 </select>
               </div>
             </div>
-            <button className="button" onClick={() => setOpen(!open)}>
-              <Image src="/plus.png" alt="" width={16} height={16} />
-            </button>
-            {open && (
-              <div className="add">
-                <input
-                  type="file"
-                  id="image"
-                  onChange={(e) => setFile(e.target.files[0])}
-                  style={{ display: "none" }}
-                />
-                <button className="addButton">
-                  <label htmlFor="image">
-                    <Image src="/image.png" alt="" width={16} height={16} />
-                  </label>
-                </button>
-                <button className="addButton">
-                  <Image src="/external.png" alt="" width={16} height={16} />
-                </button>
-                <button className="addButton">
-                  <Image src="/video.png" alt="" width={16} height={16} />
-                </button>
-              </div>
-            )}
             <div className="flex py-5 mb-5">
               <Editor value={value} setValue={setValue} />
             </div>
-            <div className="flex">
-              <button
-                className="btn btn-primary text-white"
-                onClick={handleSubmit}
-                disabled={loading}
-              >
-                Submit
-              </button>
+            <div className="flex items-center gap-5">
+              <label htmlFor="files" className="w-fit ">
+                <span
+                  className="btn btn-primary text-white"
+                  disabled={isLoading}
+                >
+                  Add cover image
+                </span>
+                <input
+                  type="file"
+                  name="files"
+                  id="files"
+                  accept="image/png, image/gif, image/jpeg"
+                  onChange={imageHandleChange}
+                  className="hidden"
+                />
+              </label>
+
+              {!selectedImages.length < 1 && (
+                <button
+                  className="btn btn-primary text-white"
+                  onClick={handleSubmit}
+                  disabled={loading || !title || !value}
+                >
+                  Submit
+                </button>
+              )}
             </div>
           </div>
         </div>
